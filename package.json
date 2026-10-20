@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@fontsource/anton": "^5.1.0",
+    "@fontsource/jetbrains-mono": "^5.1.0",
+    "@fontsource/manrope": "^5.1.0",
+    "@fontsource/noto-serif-jp": "^5.1.0",
+    "gsap": "^3.12.5",
+    "playwright": "^1.47.2"
+  }
+}

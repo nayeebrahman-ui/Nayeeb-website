@@ -1,0 +1,610 @@
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="rough" x="-5%" y="-10%" width="110%" height="120%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.035 0.09" numOctaves="2" seed="7" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="5" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</svg>
+{{SPRITE}}
+
+<a class="sr" href="#main">Skip to content</a>
+
+<header class="nav pre" id="nav">
+  <div class="wrap">
+    <a class="brand" href="#home" aria-label="Nayeeb Rahman, home">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><circle class="sig-ring" cx="24" cy="24" r="21" fill="none" stroke="#FA7402" stroke-width="1.5" stroke-dasharray="2.5 3.2"/><path d="M15 33V15l18 18V15" fill="none" stroke="#F2EEE8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><circle class="sig-spark" cx="37.5" cy="10.5" r="2.6" fill="#FA7402"/></svg>
+      <b>Nayeeb</b><span lang="ja">ナイエーブ</span>
+    </a>
+    <ul class="nav-links" id="navLinks"><li class="nav-ind" id="navInd" aria-hidden="true"></li>
+      <li><a href="#work">Work</a></li>
+      <li class="has-dd"><a href="#work" data-nav="cases" aria-haspopup="true" aria-expanded="false" id="ddBtn">Case studies <svg class="ico dd-caret"><use href="#i-caret-down"/></svg></a><div class="dd" id="navCases" role="menu" aria-label="Case studies"></div></li>
+      <li><a href="#hire">Hire me</a></li>
+      <li><a href="#consulting">Consulting</a></li>
+      <li><a href="#partner">Partner</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+    <span class="nav-cta" id="navCta"><span class="corner tl"></span><span class="corner br"></span><a class="btn btn-primary" href="#contact">Let's talk <svg class="ico"><use href="#i-arrow-right"/></svg></a></span>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="sheet"><span class="burger" aria-hidden="true"><i></i><i></i><i></i></span></button>
+  </div>
+</header>
+
+<div class="sheet" id="sheet" data-lenis-prevent role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="sheet-bg" aria-hidden="true"><img src="img/p1.webp" alt=""></div>
+  <div class="sheet-top"><span class="mono" style="color:var(--dim)">Menu</span></div>
+  <ul>
+    <li><a href="#work"><span>Work</span><small lang="ja">実績</small></a></li>
+    <li class="sh-cases"><button type="button" class="sh-cases-btn" id="shCasesBtn" aria-expanded="false" aria-controls="sheetCases"><span>Case studies</span><small lang="ja">事例</small></button><div class="sh-cases-list" id="sheetCases"></div></li>
+    <li><a href="#hire"><span>Hire me</span><small lang="ja">採用</small></a></li>
+    <li><a href="#consulting"><span>Consulting</span><small lang="ja">相談</small></a></li>
+    <li><a href="#partner"><span>Partner</span><small lang="ja">協業</small></a></li>
+    <li><a href="#about"><span>About</span><small lang="ja">物語</small></a></li>
+    <li><a href="#contact"><span>Contact</span><small lang="ja">連絡</small></a></li>
+  </ul>
+</div>
+
+<div class="wipe" id="wipe" aria-hidden="true"><div class="wipe-panel"></div><div class="wipe-label"><svg class="wipe-sig" viewBox="0 0 48 48"><circle cx="24" cy="24" r="21" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2.5 3.2"/><path d="M15 33V15l18 18V15" fill="none" stroke="#F2EEE8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="37.5" cy="10.5" r="2.6" fill="#F2EEE8"/></svg><span class="k" lang="ja"></span><span class="n"></span></div></div>
+<div class="progress" id="progress" aria-hidden="true"><i></i></div>
+<div class="cur" id="cur" aria-hidden="true"><i class="cur-ring"></i><i class="cur-dot"></i></div>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Document preview" hidden>
+  <div class="lb-bar"><span class="mono" id="lbTitle"></span><div class="lb-ctl"><button type="button" id="lbPrev" aria-label="Previous document"><svg class="ico" style="transform:scaleX(-1)"><use href="#i-arrow-right"/></svg></button><button type="button" id="lbNext" aria-label="Next document"><svg class="ico"><use href="#i-arrow-right"/></svg></button><button type="button" id="lbOut" aria-label="Zoom out"><svg class="ico"><use href="#i-minus"/></svg></button><span class="mono" id="lbZ">100%</span><button type="button" id="lbIn" aria-label="Zoom in"><svg class="ico"><use href="#i-plus"/></svg></button><button type="button" id="lbX" aria-label="Close preview"><svg class="ico"><use href="#i-x"/></svg></button></div></div>
+  <div class="lb-view" id="lbView"><div class="lb-doc" id="lbDoc"></div></div>
+</div>
+<main id="main">
+
+<!-- =================== HOME =================== -->
+<section class="page" data-page="home" data-k="序章" data-name="Prologue" data-title="Nayeeb Rahman">
+  <div class="hero" id="hero">
+    <div class="hero-stick">
+      <div class="hero-media">
+        <img class="hero-poster" id="heroPoster" src="frames/f001.webp" alt="" aria-hidden="true"><canvas id="heroCanvas" aria-hidden="true"></canvas>
+        <video id="heroVideo" class="hero-video" muted playsinline preload="none" poster="img/hero-m-start.webp" aria-hidden="true"></video>
+        <canvas id="heroEmbers" class="hero-embers" aria-hidden="true"></canvas>
+        <div class="hero-shade"></div>
+        <div class="hero-surge" id="heroSurge"></div>
+        <div class="hero-flash" id="heroFlash"></div>
+      </div>
+      <div class="hero-copy" id="heroCopy">
+        <div class="wrap">
+          <div class="inner">
+            <div class="hero-badge"><span class="badge"><i></i>Open to work from Nov 2026</span></div>
+            <h1 class="d-xl hero-name" aria-label="Nayeeb Rahman">
+              <span class="clipline" aria-hidden="true"><span>Nayeeb</span></span>
+              <svg class="rahman" id="rahman" aria-hidden="true" viewBox="0 0 520 150">
+                <defs><linearGradient id="emberGrad" x1="0" y1="0" x2="1" y2=".25"><stop offset="0" stop-color="#FCB24A"/><stop offset=".5" stop-color="#FA7402"/><stop offset="1" stop-color="#D9480F"/></linearGradient></defs>
+                <text x="0" y="128" filter="url(#rough)">Rahman</text>
+              </svg>
+            </h1>
+            <p class="role hero-late">Product manager who ships software and grows revenue. <span>8 years across product, business analysis and research.</span></p>
+            <div class="ctas hero-late">
+              <span class="mag"><a class="btn btn-primary" href="#work">See the work <svg class="ico"><use href="#i-arrow-right"/></svg></a></span>
+              <span class="mag"><a class="btn btn-ghost" href="#contact">Let's talk</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-stats" id="heroStats" aria-hidden="true"><div class="wrap">
+        <div><b data-to="2.3" data-dec="1">0.0</b><em>x</em><span>Apple Gadgets revenue in a year</span></div>
+        <div><b data-to="3">0</b><em>x</em><span>Tripploy sales</span></div>
+        <div><b data-to="3">0</b><em>x</em><span>Team Qreative lead-to-sales</span></div>
+        <div><b data-to="30">0</b><em>+</em><span>International client projects</span></div>
+      </div></div>
+      <div class="scroll-cue" id="scrollCue" aria-hidden="true"><svg class="ico"><use href="#i-caret-down"/></svg></div>
+    </div>
+  </div>
+
+  <section class="sec" aria-labelledby="doorsH">
+    <div class="wrap">
+      <div class="doors-head" id="doorsHead">
+        <h2 class="h2" id="doorsH">Pick your path. <span class="accent">Three ways</span> to work together.</h2>
+      </div>
+      <div class="doors" id="doors">
+        <a class="door" href="#hire" data-form="lightning" data-k="採用">
+          <div class="door-in frame">
+            <span class="corner tl"></span><span class="corner br"></span><span class="door-glow"></span><span class="door-zap"></span>
+            <div class="door-img" data-form="lightning" data-range="0,34"><img class="door-still" src="img/p2.webp" alt="" loading="lazy"><div class="door-ring" aria-hidden="true"><svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="94" class="g1"/><circle cx="100" cy="100" r="82" class="g2"/><circle cx="100" cy="100" r="70" class="g3"/><circle cx="100" cy="100" r="88" class="g4"/></svg></div><canvas class="door-cv" aria-hidden="true"></canvas><div class="door-tint"></div><canvas class="door-fx" aria-hidden="true"></canvas><svg class="door-seal" viewBox="0 0 200 64" aria-hidden="true"><ellipse class="r1" cx="100" cy="32" rx="92" ry="24"/><ellipse class="r2" cx="100" cy="32" rx="70" ry="17"/><path class="r3" d="M100 9 L161 42 L39 42 Z M100 55 L39 22 L161 22 Z"/><ellipse class="r4" cx="100" cy="32" rx="40" ry="9"/></svg><span class="k" lang="ja">採用</span><span class="form-tag"><b lang="ja">雷</b>Lightning form</span></div>
+            <div class="door-body">
+              <span class="q">Hiring for a role?</span>
+              <h3 class="h3">Senior PM, Head of Product, AI Product Lead</h3>
+              <p>Available full-time from November 2026. Remote or Dhaka.</p>
+              <span class="go"><span class="go-l">Hire me<i class="ul"></i></span><svg class="ico"><use href="#i-arrow-right"/></svg></span>
+            </div>
+          </div>
+        </a>
+        <a class="door" href="#consulting" data-form="shadow" data-k="相談">
+          <div class="door-in frame">
+            <span class="corner tl"></span><span class="corner br"></span><span class="door-glow"></span><span class="door-zap"></span>
+            <div class="door-img" data-form="shadow" data-range="62,84"><img class="door-still" src="img/p3.webp" alt="" loading="lazy"><div class="door-ring" aria-hidden="true"><svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="94" class="g1"/><circle cx="100" cy="100" r="82" class="g2"/><circle cx="100" cy="100" r="70" class="g3"/><circle cx="100" cy="100" r="88" class="g4"/></svg></div><canvas class="door-cv" aria-hidden="true"></canvas><div class="door-tint"></div><canvas class="door-fx" aria-hidden="true"></canvas><svg class="door-seal" viewBox="0 0 200 64" aria-hidden="true"><ellipse class="r1" cx="100" cy="32" rx="92" ry="24"/><ellipse class="r2" cx="100" cy="32" rx="70" ry="17"/><path class="r3" d="M100 9 L161 42 L39 42 Z M100 55 L39 22 L161 22 Z"/><ellipse class="r4" cx="100" cy="32" rx="40" ry="9"/></svg><span class="k" lang="ja">相談</span><span class="form-tag"><b lang="ja">影</b>Shadow form</span></div>
+            <div class="door-body">
+              <span class="q">Need a consultant?</span>
+              <h3 class="h3">Growth, marketing and product consulting</h3>
+              <p>Audits, projects or a fractional leadership seat.</p>
+              <span class="go"><span class="go-l">Consulting<i class="ul"></i></span><svg class="ico"><use href="#i-arrow-right"/></svg></span>
+            </div>
+          </div>
+        </a>
+        <a class="door" href="#partner" data-form="flame" data-k="協業">
+          <div class="door-in frame">
+            <span class="corner tl"></span><span class="corner br"></span><span class="door-glow"></span><span class="door-zap"></span>
+            <div class="door-img" data-form="flame" data-range="86,119"><img class="door-still" src="img/p4.webp" alt="" loading="lazy"><div class="door-ring" aria-hidden="true"><svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="94" class="g1"/><circle cx="100" cy="100" r="82" class="g2"/><circle cx="100" cy="100" r="70" class="g3"/><circle cx="100" cy="100" r="88" class="g4"/></svg></div><canvas class="door-cv" aria-hidden="true"></canvas><div class="door-tint"></div><canvas class="door-fx" aria-hidden="true"></canvas><svg class="door-seal" viewBox="0 0 200 64" aria-hidden="true"><ellipse class="r1" cx="100" cy="32" rx="92" ry="24"/><ellipse class="r2" cx="100" cy="32" rx="70" ry="17"/><path class="r3" d="M100 9 L161 42 L39 42 Z M100 55 L39 22 L161 22 Z"/><ellipse class="r4" cx="100" cy="32" rx="40" ry="9"/></svg><span class="k" lang="ja">協業</span><span class="form-tag"><b lang="ja">炎</b>Flame form</span></div>
+            <div class="door-body">
+              <span class="q">Short a senior on a project?</span>
+              <h3 class="h3">A senior PM or BA inside your team</h3>
+              <p>Requirements, proposals and delivery, under your brand.</p>
+              <span class="go"><span class="go-l">Partner<i class="ul"></i></span><svg class="ico"><use href="#i-arrow-right"/></svg></span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="proof" aria-label="Results" id="proof">
+    <div class="wrap proof-track" id="proofTrack">
+      <div class="stat"><div class="num"><span data-count="2.3" data-dec="1">2.3</span><em>x</em></div><p>Apple Gadgets revenue in one year, from BDT 312 crore to 720 crore.</p></div>
+      <div class="stat"><i class="rule"></i><div class="num"><span data-count="3">3</span><em>x</em></div><p>Sales at Tripploy after the platform and CRM rebuild.</p></div>
+      <div class="stat"><i class="rule"></i><div class="num"><span data-count="3">3</span><em>x</em></div><p>Lead-to-sales conversion at Team Qreative.</p></div>
+      <div class="stat"><i class="rule"></i><div class="num"><span data-count="30">30</span><em>+</em></div><p>International client projects delivered.</p></div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="featH" style="padding-block:0">
+    <div class="pan" id="pan">
+      <div class="pan-track" id="panTrack">
+        <div class="pan-intro wrap">
+          <h2 class="h2" id="featH">Selected <span class="accent">work</span></h2>
+          <p class="body-copy">A growth turnaround, an AI product for banks and a company rebuilt from the inside.</p>
+          <a class="link" href="#work">All case studies <svg class="ico"><use href="#i-arrow-right"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="doH">
+    <div class="wrap">
+      <h2 class="h2" id="doH" style="margin-bottom:48px">What I do</h2>
+      <div class="rows" id="rows">
+        <a class="row" href="#hire" data-img="img/p2.webp"><i class="rule"></i><span class="k" lang="ja">要件</span><h3>Product & BA</h3><p>Discovery, BRDs and PRDs, MVP scoping and delivery that engineering can build from without a translator.</p><svg class="ico"><use href="#i-arrow-up-right"/></svg></a>
+        <a class="row" href="#consulting" data-img="img/p4.webp"><i class="rule"></i><span class="k" lang="ja">成長</span><h3>Growth & Marketing</h3><p>Brand and integrated marketing strategy, sales enablement and market entry, measured in revenue.</p><svg class="ico"><use href="#i-arrow-up-right"/></svg></a>
+        <a class="row" href="#consulting" data-img="img/p1.webp"><i class="rule"></i><span class="k" lang="ja">変革</span><h3>Transformation & Ops</h3><p>Portfolio audits, org design, leadership hiring and SOPs that make a company run without heroics.</p><svg class="ico"><use href="#i-arrow-up-right"/></svg></a>
+        <i class="rule last"></i>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec roster" id="roster" aria-labelledby="rosterH">
+    <div class="wrap">
+      <div class="roster-head"><h2 class="h2" id="rosterH">The <span class="accent">roster</span></h2><p class="body-copy">Teams I have worked in, clients I have consulted for and the company I co-founded.</p></div>
+      <div class="roster-groups">
+        <div class="rg rg-work"><div class="rg-label"><span class="mono">Worked at</span><i class="rg-rule"></i><span class="mono rg-n">03</span></div>
+          <ul class="rg-grid"><li><div class="lg" style="--plate:var(--bone)"><span class="lg-plate" aria-hidden="true"></span><img src="img/logos/catalyst.webp" alt="Catalyst Solutions" loading="lazy" decoding="async"></div></li><li><div class="lg" style="--plate:var(--bone)"><span class="lg-plate" aria-hidden="true"></span><img src="img/logos/brac-it.webp" alt="BRAC IT" loading="lazy" decoding="async"></div></li><li><div class="lg" style="--plate:var(--bone)"><span class="lg-plate" aria-hidden="true"></span><img src="img/logos/sds-manager.webp" alt="SDS Manager" loading="lazy" decoding="async"></div></li></ul></div>
+        <div class="rg rg-cons"><div class="rg-label"><span class="mono">Consulted for</span><i class="rg-rule"></i><span class="mono rg-n">06</span></div>
+          <ul class="rg-grid"><li><a class="lg" href="#case-apple-gadgets" style="--plate:var(--bone)"><span class="lg-plate" aria-hidden="true"></span><img src="img/logos/apple-gadgets.webp" alt="Apple Gadgets" loading="lazy" decoding="async"></a></li><li><a class="lg lg-badge" href="#case-tripploy" style="--plate:var(--bone)"><span class="lg-plate" aria-hidden="true"></span><img src="img/logos/tripploy.webp" alt="Tripploy" loading="lazy" decoding="async"></a></li><li><a class="lg" href="#case-team-qreative" style="--plate:#4933C2"><span class="lg-plate" aria-hidden="true"></span><img src="img/logos/team-qreative.webp" alt="Team Qreative" loading="lazy" decoding="async"></a></li><li><div class="lg lg-badge" style="--plate:var(--bone)"><span class="lg-plate" aria-hidden="true"></span><img src="img/logos/impit.webp" alt="IMPIT" loading="lazy" decoding="async"></div></li><li><a class="lg" href="#case-nextlab" style="--plate:#1C1D53"><span class="lg-plate" aria-hidden="true"></span><img src="img/logos/nextlab.webp" alt="NextLab Solutions" loading="lazy" decoding="async"></a></li><li><div class="lg lg-badge" style="--plate:var(--bone)"><span class="lg-plate" aria-hidden="true"></span><img src="img/logos/berlin.webp" alt="Berlin Cafe &amp; Bistro" loading="lazy" decoding="async"></div></li></ul></div>
+        <div class="rg rg-found"><div class="rg-label"><span class="mono">Founded</span><i class="rg-rule"></i><span class="mono rg-n">01</span></div>
+          <ul class="rg-grid"><li><a class="lg lg-big" href="#about" style="--plate:var(--bone)"><span class="lg-plate" aria-hidden="true"></span><img src="img/logos/nexai.webp" alt="NexAI Analytics" loading="lazy" decoding="async"></a></li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="close" id="close" aria-labelledby="closeH">
+    <div class="close-media" id="closeMedia"><video class="bg" id="closeVideo" muted loop playsinline preload="none" poster="img/p5.webp" aria-hidden="true"></video></div>
+    <div class="close-vignette" id="closeVig"></div>
+    <div class="close-horizon" id="closeHorizon"></div><div class="close-bloom" aria-hidden="true"></div>
+    <canvas class="embers" aria-hidden="true"></canvas>
+    <div class="wrap">
+      <h2 class="d-l" id="closeH"><span class="c1">Let's write</span><span class="c2"><span>the <span class="grad">next episode.</span></span></span></h2>
+      <p class="lede close-lede">Tell me what you're working on. I'll tell you honestly whether I'm the right person for it.</p>
+      <div class="close-cta"><span class="sig mag" id="sig"><span class="corner tl"></span><span class="corner br"></span><a class="btn btn-primary sig-btn" href="#contact" data-intent="other"><span class="sig-label">Let's talk <svg class="ico"><use href="#i-arrow-right"/></svg></span><svg class="sig-ring" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="15"/></svg></a></span></div>
+    </div>
+  </section>
+</section>
+
+<!-- =================== WORK =================== -->
+<section class="page" data-page="work" data-k="実績" data-name="Work" data-title="Work - Nayeeb Rahman" hidden>
+  <div class="page-hero wk">
+    <div class="ab-bg" aria-hidden="true"><img class="ab-poster" src="img/wk-first.webp" alt=""><video class="vb-v" muted playsinline preload="none"></video><canvas class="vb-cv"></canvas><i class="ab-scrim"></i></div>
+    <div class="work-bg" aria-hidden="true"><canvas id="workCanvas"></canvas><div class="work-bg-shade"></div></div>
+    <div class="pa pa-w" data-live="prism"><img src="img/u-work.webp" data-lv alt="" style="object-position:70% 30%"></div>
+    <span class="watermark" lang="ja" aria-hidden="true">実績</span>
+    <div class="wrap">
+      <h1 class="d-l"><span class="rv"><span>The <span class="accent">work</span></span></span></h1>
+      <p class="lede" style="margin-top:22px">Case studies across product, growth, transformation and my own ventures.</p>
+      <div class="filters" role="group" aria-label="Filter case studies">
+        <span class="filter-ind" id="filterInd" aria-hidden="true"></span>
+        <button class="filter" data-f="all" aria-pressed="true">All</button>
+        <button class="filter" data-f="product" aria-pressed="false">Product</button>
+        <button class="filter" data-f="growth" aria-pressed="false">Growth</button>
+        <button class="filter" data-f="transformation" aria-pressed="false">Transformation</button>
+        <button class="filter" data-f="ventures" aria-pressed="false">Ventures</button>
+      </div>
+    </div>
+  </div>
+  <section class="wrap" style="padding-bottom:120px">
+    <div class="grid-work" id="workGrid"></div>
+    <div class="cta-band work-cta" id="workCta" style="margin-top:96px">
+      <i class="cta-horizon" aria-hidden="true"></i>
+      <h2 class="h2">Want results like these?</h2>
+      <div class="links">
+        <a class="wl" href="#hire"><span class="wl-t">Hire me full-time<i class="brush"></i></span><span class="wl-a"><svg class="ico"><use href="#i-arrow-right"/></svg><i class="spark"></i></span></a>
+        <a class="wl" href="#consulting"><span class="wl-t">Bring me in as a consultant<i class="brush"></i></span><span class="wl-a"><svg class="ico"><use href="#i-arrow-right"/></svg><i class="spark"></i></span></a>
+        <a class="wl" href="#partner"><span class="wl-t">Add me to your project team<i class="brush"></i></span><span class="wl-a"><svg class="ico"><use href="#i-arrow-right"/></svg><i class="spark"></i></span></a>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- =================== CASE =================== -->
+<section class="page" data-page="case" data-k="第話" data-name="Case study" hidden>
+  <div id="caseRoot"></div>
+</section>
+
+<!-- =================== HIRE =================== -->
+<section class="page" data-page="hire" data-k="採用" data-name="Hire me" data-title="Hire me - Nayeeb Rahman" hidden>
+  <div class="page-hero wr hr" id="hrHero">
+    <div class="ab-bg" aria-hidden="true"><img class="ab-poster" src="img/hr-first.webp" alt=""><video class="vb-v" muted playsinline preload="none"></video><canvas class="vb-cv"></canvas><i class="ab-scrim"></i></div>
+    <span class="wr-wm" lang="ja" aria-hidden="true">採用</span>
+    <div class="wrap wr-grid2 hr-grid">
+      <div class="wr-copy">
+        <span class="ab-eb mono wr-eb">Who you're hiring<i></i><span lang="ja">人物</span></span>
+        <h1 class="d-l wr-h hr-h" aria-label="The person between the brief and the build."><span class="wp h1a" aria-hidden="true">The person between the</span> <span class="wp h1b" aria-hidden="true"><span>brief and the build.</span></span></h1>
+        <p class="lede hr-roles">Open to <span class="rslot" aria-live="polite"><span class="slot-in">Senior Product Manager</span></span> roles.</p>
+        <span class="badge hr-badge"><i></i>Available full-time from November 2026. Remote or Dhaka.</span>
+        <div class="wr-cta hr-ctas"><span class="hr-call"><span class="corner tl"></span><span class="corner br"></span><a class="btn btn-primary" href="#contact" data-intent="hire">Book a call <svg class="ico"><use href="#i-arrow-right"/></svg></a></span><span class="btn btn-ghost hr-cv ph" role="button" tabindex="0" aria-disabled="true" data-tip="Coming soon"><span class="dl-ico" aria-hidden="true"><svg class="ico"><use href="#i-download-simple"/></svg></span>CV coming soon</span></div>
+      </div>
+      <div class="cf-wrap"><div class="cf" id="cf"><span class="corner tl"></span><span class="corner br"></span>
+        <div class="cf-head mono"><span>Character file<i></i><span lang="ja">人物</span></span><span class="cf-id">ID: Senior PM / BA</span></div>
+        <div class="cf-top"><div class="cf-ph" data-live="embers"><img src="img/u-hire.webp" data-lv alt="Nayeeb's anime avatar"></div>
+          <div class="cf-meta"><h3>Nayeeb <span>Rahman</span></h3><p class="mono">Class: Product leader</p><p class="mono">Base: Dhaka, Bangladesh</p><p class="mono">Experience: 8 years</p><p class="mono cf-st"><i></i>Available Nov 2026</p></div></div>
+        <div class="cf-bars"><div class="cf-bar"><div class="cf-bl"><span>Pre-sales & proposals</span><span lang="ja">提案</span><b>95%</b></div><i><b style="--w:95%"></b></i></div><div class="cf-bar"><div class="cf-bl"><span>Business analysis</span><span lang="ja">要件</span><b>95%</b></div><i><b style="--w:95%"></b></i></div><div class="cf-bar"><div class="cf-bl"><span>AI & data solutioning</span><span lang="ja">人工知能</span><b>85%</b></div><i><b style="--w:85%"></b></i></div><div class="cf-bar"><div class="cf-bl"><span>Quantitative market research</span><span lang="ja">調査</span><b>90%</b></div><i><b style="--w:90%"></b></i></div></div>
+      </div></div>
+    </div>
+  </div>
+
+  <section class="sec" style="padding-top:40px" aria-labelledby="tlH">
+    <div class="wrap">
+      <h2 class="h2" id="tlH" style="margin-bottom:56px">The story so far</h2>
+      <div class="rtl" id="rtl"><svg class="rt-line" aria-hidden="true"><path class="base"/><path class="ink" filter="url(#rough)"/></svg><ol class="rts"><li class="rt"><span class="rt-pill mono">~4.5 years</span><article class="rt-card"><span class="corner tl"></span><span class="corner br"></span><span class="rt-ep mono">Episode 01</span><img class="rt-logo" src="img/logos/catalyst.webp" alt="" loading="lazy"><h3>Catalyst Solutions</h3><p>Quantitative market research for Fortune 500 clients, from questionnaire design to the slide that changes the decision.</p><div class="rt-more"><ul><li><svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5 14.2 9.8 22.5 12 14.2 14.2 12 22.5 9.8 14.2 1.5 12 9.8 9.8Z" fill="currentColor"/></svg><span>~4.5 years in quantitative research</span></li><li><svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5 14.2 9.8 22.5 12 14.2 14.2 12 22.5 9.8 14.2 1.5 12 9.8 9.8Z" fill="currentColor"/></svg><span>MaXpert specialist status</span></li><li><svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5 14.2 9.8 22.5 12 14.2 14.2 12 22.5 9.8 14.2 1.5 12 9.8 9.8Z" fill="currentColor"/></svg><span>Led a research team of 30+</span></li></ul></div></article></li><li class="rt flip"><span class="rt-pill mono">~3.5 years</span><article class="rt-card"><span class="corner tl"></span><span class="corner br"></span><span class="rt-ep mono">Episode 02</span><img class="rt-logo" src="img/logos/brac-it.webp" alt="" loading="lazy"><h3>BRAC IT Services</h3><p>Senior Business Analyst across enterprise pre-sales, technical proposals, product definition and delivery.</p><div class="rt-more"><ul><li><svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5 14.2 9.8 22.5 12 14.2 14.2 12 22.5 9.8 14.2 1.5 12 9.8 9.8Z" fill="currentColor"/></svg><span>Banking, telecom, higher education and microfinance clients</span></li><li><svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5 14.2 9.8 22.5 12 14.2 14.2 12 22.5 9.8 14.2 1.5 12 9.8 9.8Z" fill="currentColor"/></svg><span>AI document processing PoC: ~95% English field extraction</span></li><li><svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5 14.2 9.8 22.5 12 14.2 14.2 12 22.5 9.8 14.2 1.5 12 9.8 9.8Z" fill="currentColor"/></svg><span>Seven-day agentic banking assistant PoC scope</span></li></ul></div></article></li><li class="rt"><span class="rt-pill mono">Present</span><article class="rt-card"><span class="corner tl"></span><span class="corner br"></span><span class="rt-ep mono">Episode 03</span><img class="rt-logo sq" src="img/logos/nexai.webp" alt="" loading="lazy"><h3>Ventures & AI</h3><p>Co-founder and CMO at NexAI Analytics, building NexNomad and NexBook. Building keeps my specifications honest.</p><div class="rt-more"><ul><li><svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5 14.2 9.8 22.5 12 14.2 14.2 12 22.5 9.8 14.2 1.5 12 9.8 9.8Z" fill="currentColor"/></svg><span>NexAI Analytics: co-founder & CMO</span></li><li><svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5 14.2 9.8 22.5 12 14.2 14.2 12 22.5 9.8 14.2 1.5 12 9.8 9.8Z" fill="currentColor"/></svg><span>NexNomad: AI travel platform, founder</span></li><li><svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5 14.2 9.8 22.5 12 14.2 14.2 12 22.5 9.8 14.2 1.5 12 9.8 9.8Z" fill="currentColor"/></svg><span>AI-Driven Data Analysis course: 10 classes</span></li></ul></div></article></li></ol></div>
+    </div>
+  </section>
+
+  <section class="how-sec" id="howSec" aria-labelledby="howH">
+    <div class="how-pin"><div class="wrap how2">
+      <div class="how-left"><span class="how-bigk" id="howBigK" lang="ja" aria-hidden="true">発</span><h2 class="h2" id="howH">How I work as a PM</h2>
+        <div class="how-rail" id="howRail"><svg class="how-line" aria-hidden="true"><path class="base"/><path class="ink" filter="url(#rough)"/></svg><ol class="how-steps"><li class="hs on" data-i="0"><i class="hs-node" aria-hidden="true"></i><div><h3>Discovery</h3><p><span>A structured discovery framework with eight session types, so the first workshop already asks the right questions.</span></p><div class="hs-img lvs" data-live="cards" aria-hidden="true"><img src="img/u-how1.webp" data-lv="" alt="" loading="lazy"></div></div></li><li class="hs" data-i="1"><i class="hs-node" aria-hidden="true"></i><div><h3>Specs</h3><p><span>BRDs, PRDs and user stories written so engineering can build from them and QA can test against them.</span></p><div class="hs-img lvs" data-live="threads" aria-hidden="true"><img src="img/u-how2.webp" data-lv="" alt="" loading="lazy"></div></div></li><li class="hs" data-i="2"><i class="hs-node" aria-hidden="true"></i><div><h3>Stakeholders</h3><p><span>Business, tech and client describing the same thing. Most projects fail because nobody wrote down what "done" meant.</span></p><div class="hs-img lvs" data-live="braid" aria-hidden="true"><img src="img/u-how3.webp" data-lv="flat" alt="" loading="lazy"></div></div></li><li class="hs" data-i="3"><i class="hs-node" aria-hidden="true"></i><div><h3>Delivery</h3><p><span>Working with engineering through build, UAT and launch, with scope decisions made early instead of late.</span></p><div class="hs-img lvs" data-live="launch" aria-hidden="true"><img src="img/u-how4.webp" data-lv="" alt="" loading="lazy"></div></div></li><li class="hs" data-i="4"><i class="hs-node" aria-hidden="true"></i><div><h3>Measurement</h3><p><span>A researcher's habit: decide what success looks like before building, then check it with real numbers.</span></p><div class="hs-img lvs" data-live="dash" aria-hidden="true"><img src="img/u-how5.webp" data-lv="" alt="" loading="lazy"></div></div></li></ol></div>
+      </div>
+      <div class="how-stage" id="howStage" aria-hidden="true"><figure class="art on" data-i="0"><div class="art-in frame"><span class="corner tl"></span><span class="corner br"></span><div class="lvs how-lv" data-live="cards"><img src="img/u-how1.webp" data-lv="" alt="Nayeeb choosing one of eight glowing discovery session cards above a workshop table" loading="lazy"></div></div><figcaption class="mono">01 · Discovery</figcaption></figure><figure class="art" data-i="1"><div class="art-in frame"><span class="corner tl"></span><span class="corner br"></span><div class="lvs how-lv" data-live="threads"><img src="img/u-how2.webp" data-lv="" alt="Nayeeb writing glowing specification pages linked to app blueprint sketches" loading="lazy"></div></div><figcaption class="mono">02 · Specs</figcaption></figure><figure class="art" data-i="2"><div class="art-in frame"><span class="corner tl"></span><span class="corner br"></span><div class="lvs how-lv" data-live="braid"><img src="img/u-how3.webp" data-lv="flat" alt="Nayeeb braiding business, tech and client threads of light into one line at a meeting table" loading="lazy"></div></div><figcaption class="mono">03 · Stakeholders</figcaption></figure><figure class="art" data-i="3"><div class="art-in frame"><span class="corner tl"></span><span class="corner br"></span><div class="lvs how-lv" data-live="launch"><img src="img/u-how4.webp" data-lv="" alt="Nayeeb approving the next stage on a lit path toward a launch gate" loading="lazy"></div></div><figcaption class="mono">04 · Delivery</figcaption></figure><figure class="art" data-i="4"><div class="art-in frame"><span class="corner tl"></span><span class="corner br"></span><div class="lvs how-lv" data-live="dash"><img src="img/u-how5.webp" data-lv="" alt="Nayeeb checking a dashboard whose bars rise to a target line he set" loading="lazy"></div></div><figcaption class="mono">05 · Measurement</figcaption></figure></div>
+    </div></div>
+  </section>
+
+  <section class="sec" aria-labelledby="skH">
+    <div class="wrap">
+      <h2 class="h2" id="skH" style="margin-bottom:44px">Skills & tools</h2>
+      <div class="sks" id="sks"><div class="sk" style="--sc:#3B82F6"><span class="corner tl"></span><span class="corner br"></span><h3><svg class="ico"><use href="#i-target"/></svg>Product</h3><ul class="tags"><li>Discovery</li><li>PRDs & BRDs</li><li>User stories</li><li>UAT</li><li>Backlog grooming</li><li>Journey mapping</li></ul></div><div class="sk" style="--sc:#A472E0"><span class="corner tl"></span><span class="corner br"></span><h3><svg class="ico"><use href="#i-brain"/></svg>Data & AI</h3><ul class="tags"><li>LLM workflows</li><li>Prompt engineering</li><li>Agentic AI</li><li>OCR / IDP pipelines</li><li>Python</li><li>SQL</li></ul></div><div class="sk" style="--sc:#FA7402"><span class="corner tl"></span><span class="corner br"></span><h3><svg class="ico"><use href="#i-briefcase"/></svg>Business</h3><ul class="tags"><li>Pre-sales bids</li><li>RFP narratives</li><li>Financial modelling</li><li>Stakeholder alignment</li><li>P&L strategy</li></ul></div><div class="sk" style="--sc:#14C2BA"><span class="corner tl"></span><span class="corner br"></span><h3><svg class="ico"><use href="#i-puzzle-piece"/></svg>Tools</h3><ul class="tools"><li class="tool" style="--tc:#2684FF"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.571 11.513H0a5.218 5.218 0 0 0 5.232 5.215h2.13v2.057A5.215 5.215 0 0 0 12.575 24V12.518a1.005 1.005 0 0 0-1.005-1.005zm5.723-5.756H5.736a5.215 5.215 0 0 0 5.215 5.214h2.129v2.058a5.218 5.218 0 0 0 5.215 5.214V6.758a1.001 1.001 0 0 0-1.001-1.001zM23.013 0H11.455a5.215 5.215 0 0 0 5.215 5.215h2.129v2.057A5.215 5.215 0 0 0 24 12.483V1.005A1.001 1.001 0 0 0 23.013 0Z"/></svg><span>Jira</span></li><li class="tool" style="--tc:#2684FF"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M.87 18.257c-.248.382-.53.875-.763 1.245a.764.764 0 0 0 .255 1.04l4.965 3.054a.764.764 0 0 0 1.058-.26c.199-.332.454-.763.733-1.221 1.967-3.247 3.945-2.853 7.508-1.146l4.957 2.337a.764.764 0 0 0 1.028-.382l2.364-5.346a.764.764 0 0 0-.382-1 599.851 599.851 0 0 1-4.965-2.361C10.911 10.97 5.224 11.185.87 18.257zM23.131 5.743c.249-.405.531-.875.764-1.25a.764.764 0 0 0-.256-1.034L18.675.404a.764.764 0 0 0-1.058.26c-.195.335-.451.763-.734 1.225-1.966 3.246-3.945 2.85-7.508 1.146L4.437.694a.764.764 0 0 0-1.027.382L1.046 6.422a.764.764 0 0 0 .382 1c1.039.49 3.105 1.467 4.965 2.361 6.698 3.246 12.392 3.029 16.738-4.04z"/></svg><span>Confluence</span></li><li class="tool" style="--tc:#5E6AD2"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.886 4.18A11.982 11.982 0 0 1 11.99 0C18.624 0 24 5.376 24 12.009c0 3.64-1.62 6.903-4.18 9.105L2.887 4.18ZM1.817 5.626l16.556 16.556c-.524.33-1.075.62-1.65.866L.951 7.277c.247-.575.537-1.126.866-1.65ZM.322 9.163l14.515 14.515c-.71.172-1.443.282-2.195.322L0 11.358a12 12 0 0 1 .322-2.195Zm-.17 4.862 9.823 9.824a12.02 12.02 0 0 1-9.824-9.824Z"/></svg><span>Linear</span></li><li class="tool" style="--tc:#F24E1E"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.852 8.981h-4.588V0h4.588c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.491-4.49 4.491zM12.735 7.51h3.117c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-3.117V7.51zm0 1.471H8.148c-2.476 0-4.49-2.014-4.49-4.49S5.672 0 8.148 0h4.588v8.981zm-4.587-7.51c-1.665 0-3.019 1.355-3.019 3.019s1.354 3.02 3.019 3.02h3.117V1.471H8.148zm4.587 15.019H8.148c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h4.588v8.98zM8.148 8.981c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h3.117V8.981H8.148zM8.172 24c-2.489 0-4.515-2.014-4.515-4.49s2.014-4.49 4.49-4.49h4.588v4.441c0 2.503-2.047 4.539-4.563 4.539zm-.024-7.51a3.023 3.023 0 0 0-3.019 3.019c0 1.665 1.365 3.019 3.044 3.019 1.705 0 3.093-1.376 3.093-3.068v-2.97H8.148zm7.704 0h-.098c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h.098c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.49-4.49 4.49zm-.097-7.509c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h.098c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-.098z"/></svg><span>Figma</span></li><li class="tool" style="--tc:#FF6C37"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.527.099C6.955-.744.942 3.9.099 10.473c-.843 6.572 3.8 12.584 10.373 13.428 6.573.843 12.587-3.801 13.428-10.374C24.744 6.955 20.101.943 13.527.099zm2.471 7.485a.855.855 0 0 0-.593.25l-4.453 4.453-.307-.307-.643-.643c4.389-4.376 5.18-4.418 5.996-3.753zm-4.863 4.861l4.44-4.44a.62.62 0 1 1 .847.903l-4.699 4.125-.588-.588zm.33.694l-1.1.238a.06.06 0 0 1-.067-.032.06.06 0 0 1 .01-.073l.645-.645.512.512zm-2.803-.459l1.172-1.172.879.878-1.979.426a.074.074 0 0 1-.085-.039.072.072 0 0 1 .013-.093zm-3.646 6.058a.076.076 0 0 1-.069-.083.077.077 0 0 1 .022-.046h.002l.946-.946 1.222 1.222-2.123-.147zm2.425-1.256a.228.228 0 0 0-.117.256l.203.865a.125.125 0 0 1-.211.117h-.003l-.934-.934-.294-.295 3.762-3.758 1.82-.393.874.874c-1.255 1.102-2.971 2.201-5.1 3.268zm5.279-3.428h-.002l-.839-.839 4.699-4.125a.952.952 0 0 0 .119-.127c-.148 1.345-2.029 3.245-3.977 5.091zm3.657-6.46l-.003-.002a1.822 1.822 0 0 1 2.459-2.684l-1.61 1.613a.119.119 0 0 0 0 .169l1.247 1.247a1.817 1.817 0 0 1-2.093-.343zm2.578 0a1.714 1.714 0 0 1-.271.218h-.001l-1.207-1.207 1.533-1.533c.661.72.637 1.832-.054 2.522zM18.855 6.05a.143.143 0 0 0-.053.157.416.416 0 0 1-.053.45.14.14 0 0 0 .023.197.141.141 0 0 0 .084.03.14.14 0 0 0 .106-.05.691.691 0 0 0 .087-.751.138.138 0 0 0-.194-.033z"/></svg><span>Postman</span></li><li class="tool" style="--tc:#FFD02F"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.392 0H13.9L17 4.808 10.444 0H6.949l3.102 6.3L3.494 0H0l3.05 8.131L0 24h3.494L10.05 6.985 6.949 24h3.494L17 5.494 13.899 24h3.493L24 3.672 17.392 0z"/></svg><span>Miro</span></li><li class="tool" style="--tc:#F2EEE8"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.459 4.208c.746.606 1.026.56 2.428.466l13.215-.793c.28 0 .047-.28-.046-.326L17.86 1.968c-.42-.326-.981-.7-2.055-.607L3.01 2.295c-.466.046-.56.28-.374.466zm.793 3.08v13.904c0 .747.373 1.027 1.214.98l14.523-.84c.841-.046.935-.56.935-1.167V6.354c0-.606-.233-.933-.748-.887l-15.177.887c-.56.047-.747.327-.747.933zm14.337.745c.093.42 0 .84-.42.888l-.7.14v10.264c-.608.327-1.168.514-1.635.514-.748 0-.935-.234-1.495-.933l-4.577-7.186v6.952L12.21 19s0 .84-1.168.84l-3.222.186c-.093-.186 0-.653.327-.746l.84-.233V9.854L7.822 9.76c-.094-.42.14-1.026.793-1.073l3.456-.233 4.764 7.279v-6.44l-1.215-.139c-.093-.514.28-.887.747-.933zM1.936 1.035l13.31-.98c1.634-.14 2.055-.047 3.082.7l4.249 2.986c.7.513.934.653.934 1.213v16.378c0 1.026-.373 1.634-1.68 1.726l-15.458.934c-.98.047-1.448-.093-1.962-.747l-3.129-4.06c-.56-.747-.793-1.306-.793-1.96V2.667c0-.839.374-1.54 1.447-1.632z"/></svg><span>Notion</span></li><li class="tool" style="--tc:#21A366"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h18v16H3zM3 9h18M3 14h18M9 4v16M15 4v16" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span>Advanced Excel / VBA</span></li></ul></div></div>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:0" aria-labelledby="edH">
+    <div class="wrap">
+      <h2 class="h2" id="edH" style="margin-bottom:36px">Education & credentials</h2>
+      <div class="crs" id="crs"><div class="cr"><span class="corner tl"></span><span class="corner br"></span><span class="cr-shine" aria-hidden="true"></span><b>MBA</b><span class="mono">IBA</span><p>Institute of Business Administration, University of Dhaka</p></div><div class="cr"><span class="corner tl"></span><span class="corner br"></span><span class="cr-shine" aria-hidden="true"></span><b>BSc EEE</b><span class="mono">AUST</span><p>Electrical & Electronic Engineering, Ahsanullah University of Science and Technology</p></div><div class="cr"><span class="corner tl"></span><span class="corner br"></span><span class="cr-shine" aria-hidden="true"></span><b>IELTS 7.5</b><span class="mono">Academic</span><p>CEFR level C1</p></div></div>
+    </div>
+  </section>
+  <section class="cclose has-pa" id="hClose" aria-labelledby="hcH">
+    <div class="cclose-fire" aria-hidden="true"></div>
+    <div class="pa" data-live="embers"><img src="img/u-hclose.webp" data-lv alt="" loading="lazy" style="object-position:68% 30%"></div>
+    <div class="wrap cclose-in">
+      <h2 class="d-l cc-h" id="hcH"><span class="ccl"><span>Let's talk about</span></span><span class="ccl"><span><span class="grad">the role.</span></span></span></h2>
+      <div class="hr-tri">
+        <span class="btn btn-ghost hr-cv ph" role="button" tabindex="0" aria-disabled="true" data-tip="Coming soon"><span class="dl-ico" aria-hidden="true"><svg class="ico"><use href="#i-download-simple"/></svg></span>CV coming soon</span>
+        <a class="btn btn-ghost hr-li" href="https://www.linkedin.com/in/md-nayeeb-rahman-b3a90a136/" target="_blank" rel="noopener"><svg class="ico"><use href="#i-linkedin-logo"/></svg>LinkedIn <svg class="ico li-arr"><use href="#i-arrow-up-right"/></svg></a>
+        <span class="signal" id="hSignal"><a class="btn btn-ghost sig-go hr-go" href="#contact" data-intent="hire"><svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5 14.2 9.8 22.5 12 14.2 14.2 12 22.5 9.8 14.2 1.5 12 9.8 9.8Z" fill="currentColor"/></svg>Book a call <svg class="ico"><use href="#i-arrow-right"/></svg></a></span>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- =================== CONSULTING =================== -->
+<section class="page" data-page="consulting" data-k="相談" data-name="Consulting" data-title="Consulting - Nayeeb Rahman" hidden>
+  <div class="page-hero wr cs" id="wrHero">
+    <div class="ab-bg" aria-hidden="true"><img class="ab-poster" src="img/cs-first.webp" alt=""><video class="vb-v" muted playsinline preload="none"></video><canvas class="vb-cv"></canvas><i class="ab-scrim"></i></div>
+    <span class="wr-wm" lang="ja" aria-hidden="true">相談</span>
+    <div class="wrap wr-grid2">
+      <div class="wr-copy">
+        <span class="ab-eb mono wr-eb">Tactical consulting<i></i><span lang="ja">参謀</span></span>
+        <h1 class="d-l wr-h" aria-label="I help businesses grow revenue and build software that works."><span class="wp w1" aria-hidden="true">I help businesses grow</span> <span class="wp w2" aria-hidden="true"><span>revenue</span></span> <span class="wp w3" aria-hidden="true">and build</span> <span class="wp w4" aria-hidden="true">software</span> <span class="wp w5" aria-hidden="true">that works.</span></h1>
+        <p class="lede wr-sub">Growth, marketing and product consulting, from a two-week audit to a fractional leadership seat.</p>
+        <div class="wr-cta"><a class="btn btn-primary wr-btn" href="#contact" data-intent="consulting">Book a discovery call <svg class="ico"><use href="#i-arrow-right"/></svg></a></div>
+      </div>
+      <div class="wr-stage" aria-hidden="true">
+        <div class="wr-mid" data-live="embers"><img src="img/u-cons.webp" data-lv alt="" style="object-position:72% 25%"></div>
+        <div class="wr-fore"><svg class="wr-holo" viewBox="0 0 600 340" aria-hidden="true">
+  <defs><linearGradient id="wrG" x1="0" x2="1"><stop offset="0" stop-color="#FCA03A"/><stop offset="1" stop-color="#FA7402"/></linearGradient><linearGradient id="wrB" x1="0" x2="1"><stop offset="0" stop-color="#93C5FD"/><stop offset="1" stop-color="#3B82F6"/></linearGradient></defs>
+  <g class="wr-grid"><path d="M40 300H560M40 250H560M40 200H560M40 150H560M40 100H560"/><path d="M100 80V320M200 80V320M300 80V320M400 80V320M500 80V320"/></g>
+  <g class="wr-bars"><rect x="70" y="250" width="16" height="50"/><rect x="94" y="232" width="16" height="68"/><rect x="118" y="214" width="16" height="86"/><rect x="142" y="226" width="16" height="74"/><rect x="166" y="196" width="16" height="104"/></g>
+  <circle class="wr-node" cx="300" cy="230" r="7"/>
+  <path class="wr-path g" d="M300 230 C 360 200, 380 140, 440 120 S 520 70, 560 48"/>
+  <path class="wr-path p" d="M300 230 C 360 250, 400 280, 460 270 S 530 236, 566 214"/>
+  <circle class="wr-end g" cx="560" cy="48" r="6"/><circle class="wr-end p" cx="566" cy="214" r="6"/>
+  <text x="472" y="38" class="wr-lbl g">GROWTH</text><text x="470" y="242" class="wr-lbl p">PRODUCT</text>
+</svg></div>
+      </div>
+    </div>
+  </div>
+
+  <section class="sec" style="padding-top:24px" aria-label="Service tracks">
+    <div class="wrap"><div class="cts" id="cts"><div class="ct" data-t="0" style="--tc:#FA7402"><span class="corner tl"></span><span class="corner br"></span><div class="ct-media" data-live="embers"><img src="img/u-ctg.webp" data-lv alt="" loading="lazy" style="object-position:80% 30%"></div><div class="ct-head"><span class="mono">Consulting track</span><span class="ct-k" lang="ja">成長</span></div><div class="ct-body"><h3>Growth & Marketing</h3><p>Brand, go-to-market and revenue acceleration</p><ul><li>Brand strategy</li><li>Integrated marketing</li><li>Sales enablement</li><li>Market entry</li></ul></div></div><div class="ct" data-t="1" style="--tc:#3B82F6"><span class="corner tl"></span><span class="corner br"></span><div class="ct-media" data-live="wire"><img src="img/u-ctp.webp" data-lv alt="" loading="lazy" style="object-position:72% 30%"></div><div class="ct-head"><span class="mono">Consulting track</span><span class="ct-k" lang="ja">要件</span></div><div class="ct-body"><h3>Product & Software</h3><p>Requirements, architecture and delivery</p><ul><li>BA & requirements</li><li>Product strategy</li><li>Digital transformation</li><li>RFP support</li></ul></div></div></div></div>
+  </section>
+
+  <section class="sec" style="padding-top:40px" aria-labelledby="modH">
+    <div class="wrap">
+      <h2 class="h2" id="modH" style="margin-bottom:44px">Ways to engage</h2>
+      <div class="models cm" id="cms">
+        <div class="model frame ignite"><span class="corner tl"></span><span class="corner br"></span><span class="cm-floor" aria-hidden="true"></span><span class="cm-sub mono">Fixed sprint</span><h3>Audit</h3><p>A short, fixed sprint to find what is holding growth or delivery back, with a written plan at the end.</p><p class="ev">Typical length: <em class="tbd">duration</em></p></div>
+        <div class="model frame ignite feature"><span class="corner tl"></span><span class="corner br"></span><span class="cm-floor" aria-hidden="true"></span><span class="cm-pill mono">Recommended<i></i><span lang="ja">旗艦</span></span><span class="cm-sub mono">Ongoing seat</span><h3>Fractional leader</h3><p>A part-time seat as Chief Business, Marketing or Product Officer, accountable for results.</p><p class="ev">Done before as acting CBTO at NextLab and consulting BD Head at Apple Gadgets.</p></div>
+        <div class="model frame ignite"><span class="corner tl"></span><span class="corner br"></span><span class="cm-floor" aria-hidden="true"></span><span class="cm-sub mono">Defined scope</span><h3>Project</h3><p>A defined scope and deliverables: a brand system, a go-to-market plan, a BRD, a tender response.</p><p class="ev">Typical length: <em class="tbd">duration</em></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:40px" aria-labelledby="procH">
+    <div class="wrap">
+      <h2 class="h2" id="procH" style="margin-bottom:56px">How an engagement runs</h2>
+      <div class="pipe" id="pipe"><svg class="pipe-line" aria-hidden="true"><path class="base"/><path class="ink" filter="url(#rough)"/></svg><ol class="pns"><li class="pn pn1"><span class="pn-node" aria-hidden="true"><i class="pn-ring"></i><i class="pn-core"></i><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M16 16l5 5"/></svg></span><div class="pn-card"><span class="pn-n mono">01</span><h3>Discovery</h3><p>Interviews, data and the numbers as they really are.</p></div></li><li class="pn pn2"><span class="pn-node" aria-hidden="true"><i class="pn-ring"></i><i class="pn-core"></i><svg viewBox="0 0 24 24"><path d="M4 12h5l2-5 3 10 2-5h4"/><circle cx="4" cy="12" r="1.5"/><circle cx="20" cy="12" r="1.5"/></svg></span><div class="pn-card"><span class="pn-n mono">02</span><h3>Diagnosis</h3><p>The two or three things that actually block growth.</p></div></li><li class="pn pn3"><span class="pn-node" aria-hidden="true"><i class="pn-ring"></i><i class="pn-core"></i><svg viewBox="0 0 24 24"><path d="M5 6h14M5 12h10M5 18h6"/></svg></span><div class="pn-card"><span class="corner tl"></span><span class="corner br"></span><span class="pn-n mono">03</span><h3>Plan</h3><p>Priorities, owners, budget and what we stop doing.</p></div></li><li class="pn pn4"><span class="pn-node" aria-hidden="true"><i class="pn-ring"></i><i class="pn-core"></i><svg viewBox="0 0 24 24"><path d="M3 12h4l3-7 4 14 3-7h4"/></svg></span><div class="pn-card"><span class="pn-n mono">04</span><h3>Execute</h3><p>Hands-on with your team, not a deck left behind.</p></div></li><li class="pn pn5"><span class="pn-node" aria-hidden="true"><i class="pn-ring"></i><i class="pn-core"></i><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-8M22 20H2"/></svg></span><div class="pn-card"><span class="pn-n mono">05</span><h3>Measure</h3><p>Results against the targets agreed on day one.</p><span class="pn-badge mono">vs day-one targets</span></div></li></ol></div>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:40px" aria-labelledby="resH">
+    <div class="wrap">
+      <h2 class="h2" id="resH" style="margin-bottom:44px">Selected results</h2>
+      <div class="grid-work" id="consultGrid"></div>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:0" aria-labelledby="faqH">
+    <div class="wrap">
+      <h2 class="h2" id="faqH" style="margin-bottom:36px">Questions</h2>
+      <div class="faq cfaq" id="cFaq">
+        <details><summary>Which industries have you worked in?<span class="pm"></span></summary><div class="ans">Consumer electronics retail, travel, software services, creative agencies, banking, telecom, higher education and microfinance.</div></details>
+        <details><summary>How do you price an engagement?<span class="pm"></span></summary><div class="ans"><em class="tbd">your pricing approach</em></div></details>
+        <details><summary>Do you work remotely or on-site?<span class="pm"></span></summary><div class="ans"><em class="tbd">remote / on-site policy</em></div></details>
+        <details><summary>How long is a typical engagement?<span class="pm"></span></summary><div class="ans">Past engagements ran from nine months to a year and a half. <em class="tbd">minimum engagement</em></div></details>
+      </div>
+    </div>
+  </section>
+  <section class="cclose has-pa" id="cClose" aria-labelledby="ccH">
+    <div class="cclose-fire" aria-hidden="true"></div>
+    <div class="pa" data-live="embers"><img src="img/u-cclose.webp" data-lv alt="" loading="lazy" style="object-position:66% 30%"></div>
+    <div class="wrap cclose-in">
+      <h2 class="d-l cc-h" id="ccH"><span class="ccl"><span>Let's find what's holding</span></span><span class="ccl"><span>your <span class="grad">growth back.</span></span></span></h2>
+      <div><span class="signal" id="cSignal"><a class="btn btn-primary sig-go cc-go" href="#contact" data-intent="consulting"><svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5 14.2 9.8 22.5 12 14.2 14.2 12 22.5 9.8 14.2 1.5 12 9.8 9.8Z" fill="currentColor"/></svg>Book a discovery call</a></span></div>
+    </div>
+  </section>
+</section>
+
+<!-- =================== PARTNER =================== -->
+<section class="page" data-page="partner" data-k="協業" data-name="Partner" data-title="Partner - Nayeeb Rahman" hidden>
+  <div class="page-hero wr pp" id="ppHero">
+    <div class="ab-bg" aria-hidden="true"><img class="ab-poster" src="img/pp-first.webp" alt=""><video class="vb-v" muted playsinline preload="none"></video><canvas class="vb-cv"></canvas><i class="ab-scrim"></i></div>
+    <span class="wr-wm" lang="ja" aria-hidden="true">協業</span>
+    <div class="wrap wr-grid2">
+      <div class="wr-copy">
+        <span class="ab-eb mono wr-eb">Embedded delivery<i></i><span lang="ja">協業</span></span>
+        <h1 class="d-l wr-h" aria-label="Your team, plus a senior PM, without the hiring cycle."><span class="wp q1" aria-hidden="true">Your team, plus a</span> <span class="wp q2" aria-hidden="true"><span>senior PM,</span></span><span class="q3" aria-hidden="true"> without the hiring cycle.</span></h1>
+        <p class="lede wr-sub">Requirements, discovery, proposals and delivery, under your brand or mine.</p>
+        <div class="wr-cta"><a class="btn btn-primary wr-btn" href="#contact" data-intent="partner">Start a partnership <svg class="ico"><use href="#i-arrow-right"/></svg></a></div>
+      </div>
+      <div class="tm-stage" aria-hidden="true">
+        <svg class="tm-ring" viewBox="0 0 600 120"><ellipse cx="300" cy="60" rx="286" ry="44"/><ellipse class="r2" cx="300" cy="60" rx="250" ry="34"/><path class="tm-link" d="M60 60 C 160 18, 440 18, 540 60"/></svg>
+        <div class="tm-team"><svg class="tm-sil" style="--d:0" viewBox="0 0 84 150" aria-hidden="true"><path d="M30 34a12 12 0 1 1 24 0a12 12 0 1 1-24 0Z"/><path d="M14 150V96c0-24 14-40 28-40s28 16 28 40v54Z"/></svg><svg class="tm-sil" style="--d:1" viewBox="0 0 84 150" aria-hidden="true"><path d="M30 34a12 12 0 1 1 24 0a12 12 0 1 1-24 0Z"/><path d="M14 150V96c0-24 14-40 28-40s28 16 28 40v54Z"/></svg><svg class="tm-sil" style="--d:2" viewBox="0 0 84 150" aria-hidden="true"><path d="M30 34a12 12 0 1 1 24 0a12 12 0 1 1-24 0Z"/><path d="M14 150V96c0-24 14-40 28-40s28 16 28 40v54Z"/></svg><svg class="tm-sil" style="--d:3" viewBox="0 0 84 150" aria-hidden="true"><path d="M30 34a12 12 0 1 1 24 0a12 12 0 1 1-24 0Z"/><path d="M14 150V96c0-24 14-40 28-40s28 16 28 40v54Z"/></svg></div>
+        <div class="tm-me" data-live="motes"><img src="img/u-part.webp" data-lv alt="" style="object-position:70% 40%"><span class="corner tl"></span><span class="corner br"></span></div>
+      </div>
+    </div>
+  </div>
+
+  <section class="sec" style="padding-top:24px" aria-labelledby="plugH">
+    <div class="wrap">
+      <h2 class="h2" id="plugH" style="margin-bottom:44px">Where I plug in</h2>
+      <div class="pts" id="pts"><div class="pt t1 frame ignite" style="--pc:#3B82F6"><span class="corner tl"></span><span class="corner br"></span><span class="pt-n mono">01</span><svg class="ico"><use href="#i-file-text"/></svg><h3>Requirements & BRDs</h3><p>BRDs, PRDs, SRS reviews and user stories your developers can build from.</p></div><div class="pt t2 frame ignite" style="--pc:#FA7402"><span class="corner tl"></span><span class="corner br"></span><span class="pt-n mono">02</span><svg class="ico"><use href="#i-users-three"/></svg><h3>Discovery workshops</h3><p>Client sessions run with a structured framework, written up the same week.</p></div><div class="pt t3 frame ignite" style="--pc:#3B82F6"><span class="corner tl"></span><span class="corner br"></span><span class="pt-n mono">03</span><svg class="ico"><use href="#i-scroll"/></svg><h3>Tenders & RFPs</h3><p>Technical proposals and pricing narratives that survive an evaluation committee.</p></div><div class="pt t4 frame ignite" style="--pc:#A472E0"><span class="corner tl"></span><span class="corner br"></span><span class="pt-n mono">04</span><svg class="ico"><use href="#i-rocket-launch"/></svg><h3>PoC scoping</h3><p>AI and software proofs of concept scoped to what the client will actually pay for.</p></div><div class="pt t5 frame ignite" style="--pc:#FA7402"><span class="corner tl"></span><span class="corner br"></span><span class="pt-n mono">05</span><svg class="ico"><use href="#i-check"/></svg><h3>UAT & delivery</h3><p>Test plans, sign-offs and launch, so the last mile does not slip.</p></div></div>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:40px" aria-labelledby="hiwH">
+    <div class="wrap">
+      <h2 class="h2" id="hiwH" style="margin-bottom:44px">How it works</h2>
+      <div class="hiw-grid"><div class="pspine" id="pSpine"><svg class="ps-line" aria-hidden="true"><path class="base"/><path class="ink" filter="url(#rough)"/></svg><ol class="pss"><li class="ps"><span class="ps-node" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span><div class="ps-t"><span class="ps-n mono">Step 01</span><h3>Onboarding</h3><p>48-hour ramp-up: repository, Slack, Figma and Jira access.</p></div></li><li class="ps"><span class="ps-node" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"/></svg></span><div class="ps-t"><span class="ps-n mono">Step 02</span><h3>Cadence</h3><p>Daily standups, weekly async summaries and milestone sign-offs.</p></div></li><li class="ps"><span class="ps-node" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9l3 3-3 3M12 15h5"/></svg></span><div class="ps-t"><span class="ps-n mono">Step 03</span><h3>Tooling stack</h3><p>Jira, Linear, Confluence, Notion, Postman, Miro and Figma.</p></div></li><li class="ps"><span class="ps-node" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></span><div class="ps-t"><span class="ps-n mono">Step 04</span><h3>Time zone overlap</h3><p>Based in Dhaka (UTC+6), with 4 to 6 hours of dedicated overlap for EU, US and APAC teams.</p></div></li><li class="ps"><span class="ps-node" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6Z"/><path d="M9 12l2 2 4-4"/></svg></span><div class="ps-t"><span class="ps-n mono">Step 05</span><h3>White-label & NDA</h3><p>Clean IP handover, an agency email identity and strict NDAs.</p></div></li></ol></div><aside class="hiw-stage" id="hiwStage" aria-hidden="true"><div class="hiw-box"><span class="corner tl"></span><span class="corner br"></span><canvas class="hiw-fx"></canvas>
+<div class="hp on" data-i="0"><span class="hp-k mono">01 · Onboarding</span><div class="hp-48"><svg viewBox="0 0 120 120"><circle class="r0" cx="60" cy="60" r="50"/><circle class="r1" cx="60" cy="60" r="50"/></svg><b>48<small>h</small></b><span class="mono">ramp-up</span></div><ul class="hp-acc"><li><i></i>Repository</li><li><i></i>Slack</li><li><i></i>Figma</li><li><i></i>Jira</li></ul></div>
+<div class="hp" data-i="1"><span class="hp-k mono">02 · Cadence</span><div class="hp-week"><div><span class="mono">Mon</span><i></i></div><div><span class="mono">Tue</span><i></i></div><div><span class="mono">Wed</span><i></i></div><div><span class="mono">Thu</span><i></i></div><div><span class="mono">Fri</span><i></i><em>Weekly summary</em></div></div><p class="hp-legend mono"><i></i>Daily standup</p><div class="hp-mile"><span class="mono">Milestone sign-off</span><b></b></div></div>
+<div class="hp" data-i="2"><span class="hp-k mono">03 · Tooling stack</span><div class="hp-stack"><span>Jira</span><span>Linear</span><span>Confluence</span><span>Notion</span><span>Postman</span><span>Miro</span><span>Figma</span></div></div>
+<div class="hp" data-i="3"><span class="hp-k mono">04 · Time zone overlap</span><div class="hp-clocks"><div><span class="mono">Dhaka · UTC+6</span><b id="tzDhaka">--:--</b></div><div><span class="mono">Your time</span><b id="tzYou">--:--</b></div></div><p class="hp-diff" id="tzDiff">&nbsp;</p><div class="hp-ov"><b>4 to 6 hours</b><span>of dedicated overlap</span><div class="hp-reg"><span>EU</span><span>US</span><span>APAC</span></div></div></div>
+<div class="hp" data-i="4"><span class="hp-k mono">05 · White-label &amp; NDA</span><div class="hp-doc"><i></i><i></i><i class="x"></i><i></i><i class="x s"></i><i></i><span class="hp-stamp mono">NDA</span></div><ul class="hp-chips"><li>Clean IP handover</li><li>Agency email identity</li><li>Strict NDAs</li></ul></div>
+</div></aside></div>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:40px" aria-labelledby="delH">
+    <div class="wrap">
+      <span class="ab-eb mono" style="margin-bottom:14px">Delivery artifacts<i></i><span lang="ja">実務成果</span></span>
+      <h2 class="h2" id="delH" style="margin-bottom:16px">Sample deliverables</h2>
+      <p class="body-copy" style="margin-bottom:36px">Redacted pages from real work. The fastest way for an agency to judge quality.</p>
+      <div class="fan" id="fan"><div class="fan-stage" id="fanStage"><button class="doc" type="button" data-i="0" aria-label="Open BRD excerpt sample"><span class="doc-head"><span class="mono">BRD excerpt</span><span class="doc-n mono">01</span></span><span class="doc-body"><span class="ln h" style="width:58%"></span><span class="ln" style="width:90%"></span><span class="ln" style="width:74%"></span><span class="rd" style="width:40%"></span><span class="ln" style="width:86%"></span><span class="ln" style="width:62%"></span><span class="rd" style="width:70%"></span><span class="ln" style="width:80%"></span><span class="rd" style="width:30%"></span><span class="ln" style="width:68%"></span></span><span class="doc-tag">To add: redacted file</span></button><button class="doc" type="button" data-i="1" aria-label="Open User stories sample"><span class="doc-head"><span class="mono">User stories</span><span class="doc-n mono">02</span></span><span class="doc-body"><span class="ln h" style="width:58%"></span><span class="ln" style="width:60%"></span><span class="rd" style="width:50%"></span><span class="ln" style="width:88%"></span><span class="ln" style="width:72%"></span><span class="rd" style="width:64%"></span><span class="ln" style="width:56%"></span><span class="ln" style="width:84%"></span><span class="rd" style="width:36%"></span><span class="ln" style="width:70%"></span></span><span class="doc-tag">To add: redacted file</span></button><button class="doc" type="button" data-i="2" aria-label="Open RFP proposal sample"><span class="doc-head"><span class="mono">RFP proposal</span><span class="doc-n mono">03</span></span><span class="doc-body"><span class="ln h" style="width:58%"></span><span class="rd" style="width:58%"></span><span class="ln" style="width:92%"></span><span class="ln" style="width:78%"></span><span class="ln" style="width:64%"></span><span class="rd" style="width:44%"></span><span class="ln" style="width:86%"></span><span class="ln" style="width:70%"></span><span class="rd" style="width:72%"></span><span class="ln" style="width:52%"></span></span><span class="doc-tag">To add: redacted file</span></button><button class="doc" type="button" data-i="3" aria-label="Open Process map sample"><span class="doc-head"><span class="mono">Process map</span><span class="doc-n mono">04</span></span><span class="doc-body"><svg class="doc-map" viewBox="0 0 200 150"><rect x="8" y="12" width="52" height="24" rx="3"/><rect x="74" y="12" width="52" height="24" rx="3"/><rect x="140" y="12" width="52" height="24" rx="3"/><path d="M60 24h14M126 24h14M100 36v22"/><path d="M100 58l-18 14 18 14 18-14z"/><rect x="8" y="104" width="64" height="24" rx="3"/><rect x="128" y="104" width="64" height="24" rx="3"/><path d="M82 72H40v32M118 72h42v32"/></svg><span class="rd" style="width:46%"></span><span class="ln" style="width:70%"></span></span><span class="doc-tag">To add: redacted file</span></button></div></div>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:40px" aria-labelledby="termsH">
+    <div class="wrap">
+      <h2 class="h2" id="termsH" style="margin-bottom:24px">Terms</h2>
+      <p class="avail"><span class="avail-dot" aria-hidden="true"><i></i></span><span class="mono">Current availability</span>1 team slot open for Q4 2026 / Q1 2027</p>
+      <div class="terms tms" id="tms"><div class="tm frame ignite"><span class="corner tl"></span><span class="corner br"></span><svg class="tm-ill" viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="26"/><path d="M40 24v16l11 8"/></svg><h3>Hourly</h3><p>Tactical advisory, discovery sprints and RFP reviews.</p><p class="tm-price"><em class="tbd">hourly rate</em></p></div><div class="tm frame ignite"><span class="corner tl"></span><span class="corner br"></span><svg class="tm-ill" viewBox="0 0 80 80" aria-hidden="true"><rect x="14" y="18" width="52" height="46" rx="4"/><path d="M14 30h52M26 12v12M54 12v12M24 42h8M36 42h8M48 42h8M24 52h8"/></svg><h3>Monthly retainer</h3><p>An embedded senior PM or BA, 20 to 40 hours a week of dedicated delivery.</p><p class="tm-price"><em class="tbd">retainer terms</em></p></div><div class="tm frame ignite"><span class="corner tl"></span><span class="corner br"></span><svg class="tm-ill" viewBox="0 0 80 80" aria-hidden="true"><path d="M16 60 32 40 44 50 64 22"/><circle cx="64" cy="22" r="4"/><path d="M16 66h50"/></svg><h3>Per project</h3><p>Fixed scope, defined milestones and turnkey deliverables.</p><p class="tm-price"><em class="tbd">project pricing</em></p></div></div>
+    </div>
+  </section>
+  <section class="cclose has-pa" id="pClose" aria-labelledby="pcH">
+    <div class="cclose-fire" aria-hidden="true"></div>
+    <div class="pa" data-live="motes"><img src="img/u-pclose.webp" data-lv alt="" loading="lazy" style="object-position:56% 30%"></div>
+    <div class="wrap cclose-in">
+      <h2 class="d-l cc-h" id="pcH"><span class="ccl"><span>Need an extra senior</span></span><span class="ccl"><span>on your <span class="grad">next project?</span></span></span></h2>
+      <div><span class="signal" id="pSignal"><a class="btn btn-primary sig-go cc-go" href="#contact" data-intent="partner"><svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5 14.2 9.8 22.5 12 14.2 14.2 12 22.5 9.8 14.2 1.5 12 9.8 9.8Z" fill="currentColor"/></svg>Start a partnership <svg class="ico"><use href="#i-arrow-right"/></svg></a></span></div>
+    </div>
+  </section>
+</section>
+
+<section class="page" data-page="about" data-k="物語" data-name="About" data-title="About - Nayeeb Rahman" hidden>
+  <div class="page-hero ab-hero" id="abHero">
+    <div class="ab-bg" aria-hidden="true"><img class="ab-poster" src="img/ab-first.webp" alt=""><video class="vb-v" muted playsinline preload="none"></video><canvas class="vb-cv"></canvas><i class="ab-scrim"></i></div>
+    <span class="ab-wm" lang="ja" aria-hidden="true">物語</span>
+    <div class="wrap ab-intro">
+      <span class="ab-eb mono">Chapter 00<i></i><span lang="ja">起源</span></span>
+      <h1 class="d-l ab-h"><span class="ab-l1">From circuit diagrams to</span> <span class="ab-l2"><span>signed contracts.</span></span></h1>
+      <p class="lede ab-sub">Four chapters, one consistent job: making sure the thing being built is the thing that was actually needed.</p>
+    </div>
+  </div>
+
+  <section class="origin" id="origin" aria-label="Four chapters">
+    <div class="origin-pin"><div class="wrap origin-grid">
+      <div class="origin-text"><ol class="origin-meter" aria-hidden="true"><li><span class="mono">01</span><i class="seg"><b></b></i></li><li><span class="mono">02</span><i class="seg"><b></b></i></li><li><span class="mono">03</span><i class="seg"><b></b></i></li><li><span class="mono">04</span><i class="seg"><b></b></i></li></ol><div class="origin-copy"><article class="oc on" data-i="0"><div class="oc-img lvs" data-live="circuitry"><img src="img/u-ab1.webp" data-lv alt="" loading="lazy"></div><span class="oc-eb mono">Chapter 01 / 04<i></i><span lang="ja">回路</span></span><div class="oc-title"><h2 class="h2">Circuits</h2><span class="oc-k" lang="ja" aria-hidden="true">回路</span></div><span class="oc-sub mono">The systems foundation</span><p>A BSc in Electrical & Electronic Engineering at Ahsanullah University. Circuit diagrams teach a habit that never leaves: before you fix anything, draw the system.</p></article><article class="oc" data-i="1"><div class="oc-img lvs" data-live="columns"><img src="img/u-ab2.webp" data-lv alt="" loading="lazy" style="object-position:72% 30%"></div><span class="oc-eb mono">Chapter 02 / 04<i></i><span lang="ja">数字</span></span><div class="oc-title"><h2 class="h2">The numbers arc</h2><span class="oc-k" lang="ja" aria-hidden="true">数字</span></div><span class="oc-sub mono">Market research and decision science</span><p>About four and a half years at Catalyst Solutions running quantitative market research for Fortune 500 clients, earning MaXpert specialist status and leading a large team.</p></article><article class="oc" data-i="2"><div class="oc-img lvs" data-live="embers"><img src="img/u-ab3.webp" data-lv alt="" loading="lazy" style="object-position:78% 30%"></div><span class="oc-eb mono">Chapter 03 / 04<i></i><span lang="ja">要件</span></span><div class="oc-title"><h2 class="h2">Level up</h2><span class="oc-k" lang="ja" aria-hidden="true">要件</span></div><span class="oc-sub mono">Enterprise BA and product definition</span><p>An MBA from IBA, then about three and a half years as a Senior Business Analyst at BRAC IT, sitting between the client who needs something and the team that has to build it.</p></article><article class="oc" data-i="3"><div class="oc-img lvs" data-live="birds"><img src="img/u-ab4.webp" data-lv alt="" loading="lazy" style="object-position:74% 30%"></div><span class="oc-eb mono">Chapter 04 / 04<i></i><span lang="ja">進化</span></span><div class="oc-title"><h2 class="h2">Next arc</h2><span class="oc-k" lang="ja" aria-hidden="true">進化</span></div><span class="oc-sub mono">Founder, CMO and product builder</span><p>Consulting that moved revenue and rebuilt companies, plus ventures of my own. The next chapter is the one we write together.</p></article></div></div>
+      <div class="origin-stage" aria-hidden="true"><span class="corner tl"></span><span class="corner br"></span><div class="scene lvs" data-live="circuitry"><img src="img/u-ab1.webp" data-lv alt=""></div><i class="scene-edge"></i><div class="scene lvs" data-live="columns"><img src="img/u-ab2.webp" data-lv alt="" loading="lazy" style="object-position:70% 30%"></div><i class="scene-edge"></i><div class="scene lvs" data-live="embers"><img src="img/u-ab3.webp" data-lv alt="" loading="lazy" style="object-position:70% 30%"></div><i class="scene-edge"></i><div class="scene lvs" data-live="birds"><img src="img/u-ab4.webp" data-lv alt="" loading="lazy" style="object-position:70% 30%"></div></div>
+    </div></div>
+  </section>
+
+  <section class="sec" aria-labelledby="prH">
+    <div class="wrap">
+      <h2 class="h2" id="prH" style="margin-bottom:28px">What I believe</h2>
+      <div class="prs" id="prs"><i class="pr-rule top"></i><div class="pr"><span class="pr-k" lang="ja" aria-hidden="true">定</span><div class="pr-t"><h3><span class="ln"><span>Write down what "done" means.</span></span></h3><p><span class="ln"><span>Most projects fail because nobody wrote it down.</span></span></p></div><i class="pr-rule"></i></div><div class="pr"><span class="pr-k" lang="ja" aria-hidden="true">作</span><div class="pr-t"><h3><span class="ln"><span>Build to stay honest.</span></span></h3><p><span class="ln"><span>Harder to write vague specs once you've shipped code.</span></span></p></div><i class="pr-rule"></i></div><div class="pr"><span class="pr-k" lang="ja" aria-hidden="true">誠</span><div class="pr-t"><h3><span class="ln"><span>Say if I'm the wrong fit.</span></span></h3><p><span class="ln"><span>I will tell you frankly whether I can move your needle.</span></span></p></div><i class="pr-rule"></i></div></div>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:0" aria-labelledby="venH">
+    <div class="wrap">
+      <h2 class="h2" id="venH" style="margin-bottom:44px">Side quests</h2>
+      <div class="ventures vqs" id="vqs"><div class="venture vq frame ignite" style="--vc:#FA7402"><span class="corner tl"></span><span class="corner br"></span><span class="vq-floor" aria-hidden="true"></span><div class="pv"><div class="pv-in"><span class="pv-bar"></span><span class="pv-ln" style="width:62%"></span><span class="pv-ln" style="width:88%"></span><span class="pv-ln" style="width:74%"></span><span class="pv-ln" style="width:50%"></span><span class="pv-ln" style="width:92%"></span><span class="pv-ln" style="width:66%"></span><span class="pv-ln" style="width:80%"></span><span class="pv-ln" style="width:58%"></span><span class="pv-ln" style="width:86%"></span><span class="pv-ln" style="width:70%"></span><span class="pv-ln" style="width:44%"></span><span class="pv-ln" style="width:78%"></span><span class="pv-grid"><i></i><i></i><i></i><i></i></span><span class="pv-ln" style="width:62%"></span><span class="pv-ln" style="width:88%"></span><span class="pv-ln" style="width:74%"></span><span class="pv-ln" style="width:50%"></span><span class="pv-ln" style="width:92%"></span><span class="pv-ln" style="width:66%"></span><span class="pv-ln" style="width:80%"></span><span class="pv-ln" style="width:58%"></span><span class="pv-ln" style="width:86%"></span><span class="pv-ln" style="width:70%"></span><span class="pv-ln" style="width:44%"></span><span class="pv-ln" style="width:78%"></span></div><span class="pv-tag">To add: product screenshot</span></div><div class="vq-body"><span class="vq-id mono">SQ.01<span lang="ja">旅</span></span><h3>NexNomad</h3><span class="r">Founder</span><p>An AI-powered travel platform. Phase 1 is the itinerary loop, with a self-hosted inference layer from day one.</p></div></div><div class="venture vq frame ignite" style="--vc:#14C2BA"><span class="corner tl"></span><span class="corner br"></span><span class="vq-floor" aria-hidden="true"></span><div class="pv"><div class="pv-in"><img class="pv-logo" src="img/logos/nexai.webp" alt=""><span class="pv-bar"></span><span class="pv-ln" style="width:62%"></span><span class="pv-ln" style="width:88%"></span><span class="pv-ln" style="width:74%"></span><span class="pv-ln" style="width:50%"></span><span class="pv-ln" style="width:92%"></span><span class="pv-ln" style="width:66%"></span><span class="pv-ln" style="width:80%"></span><span class="pv-ln" style="width:58%"></span><span class="pv-ln" style="width:86%"></span><span class="pv-ln" style="width:70%"></span><span class="pv-ln" style="width:44%"></span><span class="pv-ln" style="width:78%"></span><span class="pv-grid"><i></i><i></i><i></i><i></i></span><span class="pv-ln" style="width:62%"></span><span class="pv-ln" style="width:88%"></span><span class="pv-ln" style="width:74%"></span><span class="pv-ln" style="width:50%"></span><span class="pv-ln" style="width:92%"></span><span class="pv-ln" style="width:66%"></span><span class="pv-ln" style="width:80%"></span><span class="pv-ln" style="width:58%"></span><span class="pv-ln" style="width:86%"></span><span class="pv-ln" style="width:70%"></span><span class="pv-ln" style="width:44%"></span><span class="pv-ln" style="width:78%"></span></div><span class="pv-tag">To add: product screenshot</span></div><div class="vq-body"><span class="vq-id mono">SQ.02<span lang="ja">分析</span></span><h3>NexAI Analytics</h3><span class="r">Co-founder & CMO</span><p>An applied-AI analytics venture, now building NexBook: an AI-native ERP positioned as a CFO's CFO.</p></div></div><div class="venture vq frame ignite" style="--vc:#A472E0"><span class="corner tl"></span><span class="corner br"></span><span class="vq-floor" aria-hidden="true"></span><div class="pv"><div class="pv-in"><span class="pv-bar"></span><span class="pv-ln" style="width:62%"></span><span class="pv-ln" style="width:88%"></span><span class="pv-ln" style="width:74%"></span><span class="pv-ln" style="width:50%"></span><span class="pv-ln" style="width:92%"></span><span class="pv-ln" style="width:66%"></span><span class="pv-ln" style="width:80%"></span><span class="pv-ln" style="width:58%"></span><span class="pv-ln" style="width:86%"></span><span class="pv-ln" style="width:70%"></span><span class="pv-ln" style="width:44%"></span><span class="pv-ln" style="width:78%"></span><span class="pv-grid"><i></i><i></i><i></i><i></i></span><span class="pv-ln" style="width:62%"></span><span class="pv-ln" style="width:88%"></span><span class="pv-ln" style="width:74%"></span><span class="pv-ln" style="width:50%"></span><span class="pv-ln" style="width:92%"></span><span class="pv-ln" style="width:66%"></span><span class="pv-ln" style="width:80%"></span><span class="pv-ln" style="width:58%"></span><span class="pv-ln" style="width:86%"></span><span class="pv-ln" style="width:70%"></span><span class="pv-ln" style="width:44%"></span><span class="pv-ln" style="width:78%"></span></div><span class="pv-tag">To add: product screenshot</span></div><div class="vq-body"><span class="vq-id mono">SQ.03<span lang="ja">教育</span></span><h3>AI-Driven Data Analysis</h3><span class="r">Instructor</span><p>Ten recorded classes teaching professionals to automate Excel with AI-written VBA, no coding required.</p><a class="link" href="https://aivarsitybangla.com/ai-driven-data-analysis" target="_blank" rel="noopener">Course page <svg class="ico"><use href="#i-arrow-up-right"/></svg></a></div></div></div>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:0" aria-labelledby="bwH" id="beyond">
+    <div class="wrap">
+      <h2 class="h2" id="bwH" style="margin-bottom:20px">Beyond work</h2>
+      <p class="body-copy" style="margin-bottom:28px">I travel and document it as Nights and Days of Neptune.</p>
+      <div class="ig" id="ig">
+        <header class="ig-head">
+          <a class="ig-av" href="https://www.instagram.com/nights_and_days_of_neptune/" target="_blank" rel="noopener" aria-label="Open Nights and Days of Neptune on Instagram"><span class="ig-ring" aria-hidden="true"></span><img src="img/ig/ig-av.webp" alt="Nayeeb on a cliff by the sea"></a>
+          <div class="ig-meta">
+            <div class="ig-row"><h3 class="ig-handle">nights_and_days_of_neptune</h3><a class="ig-btn ig-follow" href="https://www.instagram.com/nights_and_days_of_neptune/" target="_blank" rel="noopener">Follow</a><a class="ig-btn" href="https://www.instagram.com/nights_and_days_of_neptune/" target="_blank" rel="noopener">View profile</a></div>
+            <p class="ig-name">Nights and Days of Neptune</p>
+            <p class="ig-bio">Travel diary by Nayeeb. Mountains, seas, streets and the cafés in between.</p>
+          </div>
+        </header>
+        <ul class="ig-hls" aria-label="Highlights"><li><button class="ig-hl" type="button" data-i="1"><span class="ig-hl-r"><img src="img/ig/ig02.webp" alt="" loading="lazy"></span><span class="ig-hl-t">Snow</span></button></li><li><button class="ig-hl" type="button" data-i="6"><span class="ig-hl-r"><img src="img/ig/ig08.webp" alt="" loading="lazy"></span><span class="ig-hl-t">Sea</span></button></li><li><button class="ig-hl" type="button" data-i="7"><span class="ig-hl-r"><img src="img/ig/ig09.webp" alt="" loading="lazy"></span><span class="ig-hl-t">Streets</span></button></li><li><button class="ig-hl" type="button" data-i="11"><span class="ig-hl-r"><img src="img/ig/ig13.webp" alt="" loading="lazy"></span><span class="ig-hl-t">Cafés</span></button></li><li><button class="ig-hl" type="button" data-i="12"><span class="ig-hl-r"><img src="img/ig/ig14.webp" alt="" loading="lazy"></span><span class="ig-hl-t">Temples</span></button></li></ul>
+        <div class="ig-tabs" aria-hidden="true"><span class="on"><svg viewBox="0 0 24 24"><path d="M3 3h18v18H3zM9 3v18M15 3v18M3 9h18M3 15h18"/></svg>Posts</span></div>
+        <div class="ig-grid" id="igGrid"><button class="ig-tile" type="button" data-i="0" aria-label="Open travel photo 1 of 16"><img src="img/ig/ig01.webp" alt="" loading="lazy" decoding="async"><span class="ig-ov" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 7.9 3.6 4.5 7.1 4.5c2 0 3.6 1.1 4.9 2.8 1.3-1.7 2.9-2.8 4.9-2.8 3.5 0 5.7 3.4 4.4 6.8-1.8 4.6-9.3 9.2-9.3 9.2Z"/></svg><svg viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></span><i class="ig-pop" aria-hidden="true"></i></button><button class="ig-tile" type="button" data-i="1" aria-label="Open travel photo 2 of 16"><img src="img/ig/ig02.webp" alt="" loading="lazy" decoding="async"><span class="ig-ov" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 7.9 3.6 4.5 7.1 4.5c2 0 3.6 1.1 4.9 2.8 1.3-1.7 2.9-2.8 4.9-2.8 3.5 0 5.7 3.4 4.4 6.8-1.8 4.6-9.3 9.2-9.3 9.2Z"/></svg><svg viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></span><i class="ig-pop" aria-hidden="true"></i></button><button class="ig-tile" type="button" data-i="2" aria-label="Open travel photo 3 of 16"><img src="img/ig/ig03.webp" alt="" loading="lazy" decoding="async"><span class="ig-ov" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 7.9 3.6 4.5 7.1 4.5c2 0 3.6 1.1 4.9 2.8 1.3-1.7 2.9-2.8 4.9-2.8 3.5 0 5.7 3.4 4.4 6.8-1.8 4.6-9.3 9.2-9.3 9.2Z"/></svg><svg viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></span><i class="ig-pop" aria-hidden="true"></i></button><button class="ig-tile" type="button" data-i="3" aria-label="Open travel photo 4 of 16"><img src="img/ig/ig04.webp" alt="" loading="lazy" decoding="async"><span class="ig-ov" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 7.9 3.6 4.5 7.1 4.5c2 0 3.6 1.1 4.9 2.8 1.3-1.7 2.9-2.8 4.9-2.8 3.5 0 5.7 3.4 4.4 6.8-1.8 4.6-9.3 9.2-9.3 9.2Z"/></svg><svg viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></span><i class="ig-pop" aria-hidden="true"></i></button><button class="ig-tile" type="button" data-i="4" aria-label="Open travel photo 5 of 16"><img src="img/ig/ig05.webp" alt="" loading="lazy" decoding="async"><span class="ig-ov" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 7.9 3.6 4.5 7.1 4.5c2 0 3.6 1.1 4.9 2.8 1.3-1.7 2.9-2.8 4.9-2.8 3.5 0 5.7 3.4 4.4 6.8-1.8 4.6-9.3 9.2-9.3 9.2Z"/></svg><svg viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></span><i class="ig-pop" aria-hidden="true"></i></button><button class="ig-tile" type="button" data-i="5" aria-label="Open travel photo 6 of 16"><img src="img/ig/ig07.webp" alt="" loading="lazy" decoding="async"><span class="ig-ov" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 7.9 3.6 4.5 7.1 4.5c2 0 3.6 1.1 4.9 2.8 1.3-1.7 2.9-2.8 4.9-2.8 3.5 0 5.7 3.4 4.4 6.8-1.8 4.6-9.3 9.2-9.3 9.2Z"/></svg><svg viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></span><i class="ig-pop" aria-hidden="true"></i></button><button class="ig-tile" type="button" data-i="6" aria-label="Open travel photo 7 of 16"><img src="img/ig/ig08.webp" alt="" loading="lazy" decoding="async"><span class="ig-ov" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 7.9 3.6 4.5 7.1 4.5c2 0 3.6 1.1 4.9 2.8 1.3-1.7 2.9-2.8 4.9-2.8 3.5 0 5.7 3.4 4.4 6.8-1.8 4.6-9.3 9.2-9.3 9.2Z"/></svg><svg viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></span><i class="ig-pop" aria-hidden="true"></i></button><button class="ig-tile" type="button" data-i="7" aria-label="Open travel photo 8 of 16"><img src="img/ig/ig09.webp" alt="" loading="lazy" decoding="async"><span class="ig-ov" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 7.9 3.6 4.5 7.1 4.5c2 0 3.6 1.1 4.9 2.8 1.3-1.7 2.9-2.8 4.9-2.8 3.5 0 5.7 3.4 4.4 6.8-1.8 4.6-9.3 9.2-9.3 9.2Z"/></svg><svg viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></span><i class="ig-pop" aria-hidden="true"></i></button><button class="ig-tile" type="button" data-i="8" aria-label="Open travel photo 9 of 16"><img src="img/ig/ig10.webp" alt="" loading="lazy" decoding="async"><span class="ig-ov" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 7.9 3.6 4.5 7.1 4.5c2 0 3.6 1.1 4.9 2.8 1.3-1.7 2.9-2.8 4.9-2.8 3.5 0 5.7 3.4 4.4 6.8-1.8 4.6-9.3 9.2-9.3 9.2Z"/></svg><svg viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></span><i class="ig-pop" aria-hidden="true"></i></button><button class="ig-tile" type="button" data-i="9" aria-label="Open travel photo 10 of 16"><img src="img/ig/ig11.webp" alt="" loading="lazy" decoding="async"><span class="ig-ov" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 7.9 3.6 4.5 7.1 4.5c2 0 3.6 1.1 4.9 2.8 1.3-1.7 2.9-2.8 4.9-2.8 3.5 0 5.7 3.4 4.4 6.8-1.8 4.6-9.3 9.2-9.3 9.2Z"/></svg><svg viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></span><i class="ig-pop" aria-hidden="true"></i></button><button class="ig-tile" type="button" data-i="10" aria-label="Open travel photo 11 of 16"><img src="img/ig/ig12.webp" alt="" loading="lazy" decoding="async"><span class="ig-ov" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 7.9 3.6 4.5 7.1 4.5c2 0 3.6 1.1 4.9 2.8 1.3-1.7 2.9-2.8 4.9-2.8 3.5 0 5.7 3.4 4.4 6.8-1.8 4.6-9.3 9.2-9.3 9.2Z"/></svg><svg viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></span><i class="ig-pop" aria-hidden="true"></i></button><button class="ig-tile" type="button" data-i="11" aria-label="Open travel photo 12 of 16"><img src="img/ig/ig13.webp" alt="" loading="lazy" decoding="async"><span class="ig-ov" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 7.9 3.6 4.5 7.1 4.5c2 0 3.6 1.1 4.9 2.8 1.3-1.7 2.9-2.8 4.9-2.8 3.5 0 5.7 3.4 4.4 6.8-1.8 4.6-9.3 9.2-9.3 9.2Z"/></svg><svg viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></span><i class="ig-pop" aria-hidden="true"></i></button><button class="ig-tile" type="button" data-i="12" aria-label="Open travel photo 13 of 16"><img src="img/ig/ig14.webp" alt="" loading="lazy" decoding="async"><span class="ig-ov" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 7.9 3.6 4.5 7.1 4.5c2 0 3.6 1.1 4.9 2.8 1.3-1.7 2.9-2.8 4.9-2.8 3.5 0 5.7 3.4 4.4 6.8-1.8 4.6-9.3 9.2-9.3 9.2Z"/></svg><svg viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></span><i class="ig-pop" aria-hidden="true"></i></button><button class="ig-tile" type="button" data-i="13" aria-label="Open travel photo 14 of 16"><img src="img/ig/ig15.webp" alt="" loading="lazy" decoding="async"><span class="ig-ov" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 7.9 3.6 4.5 7.1 4.5c2 0 3.6 1.1 4.9 2.8 1.3-1.7 2.9-2.8 4.9-2.8 3.5 0 5.7 3.4 4.4 6.8-1.8 4.6-9.3 9.2-9.3 9.2Z"/></svg><svg viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></span><i class="ig-pop" aria-hidden="true"></i></button><button class="ig-tile" type="button" data-i="14" aria-label="Open travel photo 15 of 16"><img src="img/ig/ig16.webp" alt="" loading="lazy" decoding="async"><span class="ig-ov" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 7.9 3.6 4.5 7.1 4.5c2 0 3.6 1.1 4.9 2.8 1.3-1.7 2.9-2.8 4.9-2.8 3.5 0 5.7 3.4 4.4 6.8-1.8 4.6-9.3 9.2-9.3 9.2Z"/></svg><svg viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></span><i class="ig-pop" aria-hidden="true"></i></button><button class="ig-tile" type="button" data-i="15" aria-label="Open travel photo 16 of 16"><img src="img/ig/ig06.webp" alt="" loading="lazy" decoding="async"><span class="ig-ov" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 7.9 3.6 4.5 7.1 4.5c2 0 3.6 1.1 4.9 2.8 1.3-1.7 2.9-2.8 4.9-2.8 3.5 0 5.7 3.4 4.4 6.8-1.8 4.6-9.3 9.2-9.3 9.2Z"/></svg><svg viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></span><i class="ig-pop" aria-hidden="true"></i></button></div>
+        <a class="link ig-more" href="https://www.instagram.com/nights_and_days_of_neptune/" target="_blank" rel="noopener"><svg class="ico"><use href="#i-instagram-logo"/></svg> See more on @nights_and_days_of_neptune</a>
+      </div>
+      <div class="ig-view" id="igView" role="dialog" aria-modal="true" aria-label="Travel photo" hidden>
+        <div class="ig-card">
+          <div class="ig-ph"><img id="igImg" src="" alt=""><i class="ig-big" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 7.9 3.6 4.5 7.1 4.5c2 0 3.6 1.1 4.9 2.8 1.3-1.7 2.9-2.8 4.9-2.8 3.5 0 5.7 3.4 4.4 6.8-1.8 4.6-9.3 9.2-9.3 9.2Z"/></svg></i></div>
+          <aside class="ig-side">
+            <div class="ig-who"><img src="img/ig/ig-av.webp" alt=""><b>nights_and_days_of_neptune</b></div>
+            <p class="ig-cap"><b>nights_and_days_of_neptune</b> From the travel diary. Double-tap the photo to like it.</p>
+            <div class="ig-acts"><button class="ig-like" id="igLike" type="button" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 7.9 3.6 4.5 7.1 4.5c2 0 3.6 1.1 4.9 2.8 1.3-1.7 2.9-2.8 4.9-2.8 3.5 0 5.7 3.4 4.4 6.8-1.8 4.6-9.3 9.2-9.3 9.2Z"/></svg></button><span class="ig-count mono" id="igCount"></span><a class="ig-btn ig-follow" href="https://www.instagram.com/nights_and_days_of_neptune/" target="_blank" rel="noopener">Open on Instagram</a></div>
+          </aside>
+        </div>
+        <button class="ig-x" id="igX" type="button" aria-label="Close"><svg class="ico"><use href="#i-x"/></svg></button>
+        <button class="ig-nav prev" id="igPrev" type="button" aria-label="Previous photo"><svg class="ico"><use href="#i-arrow-right"/></svg></button>
+        <button class="ig-nav next" id="igNext" type="button" aria-label="Next photo"><svg class="ico"><use href="#i-arrow-right"/></svg></button>
+      </div>
+      <div class="ab-close" id="abClose">
+        <span class="abc-k" lang="ja" aria-hidden="true">続</span><canvas class="abc-fx" aria-hidden="true"></canvas>
+        <figure class="me" id="me"><div class="me-in"><div class="me-ph"><img src="img/me-suit.webp" alt="Nayeeb Rahman in a navy pinstripe suit" loading="lazy"></div></div><span class="me-brush" aria-hidden="true"></span>
+          <figcaption class="me-tag"><span class="mono">Chapter 05 / next</span><b>Nayeeb Rahman</b><span>Product · Business analysis · Growth</span></figcaption></figure>
+        <div class="ab-cta">
+          <span class="ab-eb mono">The next chapter<i></i><span lang="ja">続く</span></span>
+          <h2 class="d-l ab-cta-h"><span class="c1">Every story needs its</span> <span class="c2"><span>next arc.</span></span></h2>
+          <p class="lede abc-sub">Tell me what you're working on. I'll tell you honestly whether I'm the right person for it.</p>
+          <ul class="abc-paths">
+            <li><a href="#hire"><span class="mono">01</span><b>Hire me full-time</b><svg class="ico"><use href="#i-arrow-right"/></svg></a></li>
+            <li><a href="#consulting"><span class="mono">02</span><b>Bring me in as a consultant</b><svg class="ico"><use href="#i-arrow-right"/></svg></a></li>
+            <li><a href="#partner"><span class="mono">03</span><b>Add me to your project team</b><svg class="ico"><use href="#i-arrow-right"/></svg></a></li>
+          </ul>
+          <div class="abc-row"><span class="signal" id="signal"><a class="btn btn-primary sig-go" href="#contact" data-intent="other"><svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5 14.2 9.8 22.5 12 14.2 14.2 12 22.5 9.8 14.2 1.5 12 9.8 9.8Z" fill="currentColor"/></svg>Send a signal</a></span>
+            <div class="abc-soc"><a href="mailto:nayeebrahman@gmail.com" aria-label="Email"><svg class="ico"><use href="#i-envelope-simple"/></svg></a><a href="https://wa.me/8801624373686" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="ico"><use href="#i-whatsapp-logo"/></svg></a><a href="https://www.linkedin.com/in/md-nayeeb-rahman-b3a90a136/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="ico"><use href="#i-linkedin-logo"/></svg></a></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- =================== CONTACT =================== -->
+<section class="page" data-page="contact" data-k="連絡" data-name="Let's talk" data-title="Contact - Nayeeb Rahman" hidden>
+  <div class="page-hero has-pa" style="padding-bottom:40px">
+    <div class="pa" data-live="embers"><img src="img/u-contact.webp" data-lv alt="" style="object-position:76% 20%"></div>
+    <span class="watermark k-wm" lang="ja" aria-hidden="true">連絡</span>
+    <div class="wrap"><h1 class="d-l k-h" aria-label="Send a signal."><span class="wp k1" aria-hidden="true">Send a</span> <span class="wp k2" aria-hidden="true"><span>signal.</span></span></h1>
+    <p class="lede k-sub" style="margin-top:20px">Pick what you're after and I'll ask only what matters for it.</p></div>
+  </div>
+  <section class="wrap" style="padding-bottom:140px">
+    <div class="contact-grid">
+      <div class="cbox" id="cbox"><div class="cform" id="cform">
+        <div class="intents" role="radiogroup" aria-label="What are you after?">
+          <button class="intent" role="radio" aria-checked="true" data-i="hire"><svg class="ico"><use href="#i-briefcase"/></svg>Full-time role</button>
+          <button class="intent" role="radio" aria-checked="false" data-i="consulting"><svg class="ico"><use href="#i-strategy"/></svg>Consulting</button>
+          <button class="intent" role="radio" aria-checked="false" data-i="partner"><svg class="ico"><use href="#i-handshake"/></svg>Project partnership</button>
+          <button class="intent" role="radio" aria-checked="false" data-i="other"><svg class="ico"><use href="#i-envelope-simple"/></svg>Something else</button>
+        </div>
+        <form id="form" novalidate>
+          <div class="fields" id="fields"></div>
+          <div style="margin-top:24px;display:flex;flex-wrap:wrap;align-items:center;gap:16px">
+            <button class="btn btn-primary" type="submit">Send message <svg class="ico"><use href="#i-arrow-right"/></svg></button>
+          </div>
+        </form></div>
+        <div class="sent" id="sent" hidden>
+          <div class="sent-art" data-live="prism"><img src="img/u-sent.webp" data-lv alt="" loading="lazy" style="object-position:52% 45%"></div>
+          <svg class="seal" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28"/><path d="M20 33l8 8 16-18"/></svg>
+          <h2 class="h3">Message ready</h2>
+          <p class="body-copy">This page can't send email by itself yet. Copy the message below and send it to nayeebrahman@gmail.com, or open it straight in your email app.</p>
+          <pre id="sentText"></pre>
+          <div style="display:flex;flex-wrap:wrap;gap:12px"><button class="btn btn-primary" type="button" id="copyMsg"><span class="ci" aria-hidden="true"><svg class="ico c-copy"><use href="#i-copy"/></svg><svg class="ico c-ok"><use href="#i-check"/></svg></span><span class="c-lbl">Copy message</span></button><a class="btn btn-ghost" id="mailMsg" href="mailto:nayeebrahman@gmail.com"><svg class="ico"><use href="#i-envelope-simple"/></svg>Open in email</a><button class="btn btn-ghost" type="button" id="editMsg">Edit</button></div>
+        </div>
+      </div>
+      <aside class="direct" aria-label="Direct contact">
+        <div class="item"><svg class="ico"><use href="#i-envelope-simple"/></svg><div><b>Email</b><span><a class="dl" href="mailto:nayeebrahman@gmail.com">nayeebrahman@gmail.com</a></span></div><button class="copy" type="button" data-copy="nayeebrahman@gmail.com" aria-label="Copy email address"><span class="ci" aria-hidden="true"><svg class="ico c-copy"><use href="#i-copy"/></svg><svg class="ico c-ok"><use href="#i-check"/></svg></span></button></div><div class="item"><svg class="ico"><use href="#i-phone"/></svg><div><b>Phone</b><span><a class="dl" href="tel:+8801624373686">+880 1624 373686</a><br><a class="dl" href="tel:+8801787680648">+880 1787 680648</a></span></div><button class="copy" type="button" data-copy="+8801624373686" aria-label="Copy phone number"><span class="ci" aria-hidden="true"><svg class="ico c-copy"><use href="#i-copy"/></svg><svg class="ico c-ok"><use href="#i-check"/></svg></span></button></div><div class="item"><svg class="ico"><use href="#i-whatsapp-logo"/></svg><div><b>WhatsApp</b><span><a class="dl" href="https://wa.me/8801624373686" target="_blank" rel="noopener">+880 1624 373686</a> · @Nayeeb.Rahman</span></div><button class="copy" type="button" data-copy="+8801624373686" aria-label="Copy WhatsApp number"><span class="ci" aria-hidden="true"><svg class="ico c-copy"><use href="#i-copy"/></svg><svg class="ico c-ok"><use href="#i-check"/></svg></span></button></div><div class="item"><svg class="ico"><use href="#i-linkedin-logo"/></svg><div><b>LinkedIn</b><span><a class="dl" href="https://www.linkedin.com/in/md-nayeeb-rahman-b3a90a136/" target="_blank" rel="noopener">in/md-nayeeb-rahman</a></span></div><button class="copy" type="button" data-copy="https://www.linkedin.com/in/md-nayeeb-rahman-b3a90a136/" aria-label="Copy LinkedIn link"><span class="ci" aria-hidden="true"><svg class="ico c-copy"><use href="#i-copy"/></svg><svg class="ico c-ok"><use href="#i-check"/></svg></span></button></div><div class="item"><svg class="ico"><use href="#i-calendar-blank"/></svg><div><b>Book a call</b><span><a class="dl" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Call+with+Nayeeb+Rahman&amp;details=Intro+call+requested+from+Nayeeb+Rahman%27s+portfolio.+Pick+a+time+and+add+what+you+would+like+to+discuss.&amp;add=nayeebrahman%40gmail.com" target="_blank" rel="noopener">Send a Google Calendar invite</a></span></div></div><div class="item"><svg class="ico"><use href="#i-github-logo"/></svg><div><b>GitHub</b><span><a class="dl" href="https://github.com/nayeebrahman-ui" target="_blank" rel="noopener">github.com/nayeebrahman-ui</a></span></div><button class="copy" type="button" data-copy="https://github.com/nayeebrahman-ui" aria-label="Copy GitHub link"><span class="ci" aria-hidden="true"><svg class="ico c-copy"><use href="#i-copy"/></svg><svg class="ico c-ok"><use href="#i-check"/></svg></span></button></div><div class="item"><svg class="ico"><use href="#i-instagram-logo"/></svg><div><b>Instagram</b><span><a class="dl" href="https://www.instagram.com/nights_and_days_of_neptune/" target="_blank" rel="noopener">@nights_and_days_of_neptune</a></span></div><button class="copy" type="button" data-copy="https://www.instagram.com/nights_and_days_of_neptune/" aria-label="Copy Instagram link"><span class="ci" aria-hidden="true"><svg class="ico c-copy"><use href="#i-copy"/></svg><svg class="ico c-ok"><use href="#i-check"/></svg></span></button></div><div class="item"><svg class="ico"><use href="#i-facebook-logo"/></svg><div><b>Facebook</b><span><a class="dl" href="https://www.facebook.com/audry.rahman.5/" target="_blank" rel="noopener">facebook.com/audry.rahman.5</a></span></div><button class="copy" type="button" data-copy="https://www.facebook.com/audry.rahman.5/" aria-label="Copy Facebook link"><span class="ci" aria-hidden="true"><svg class="ico c-copy"><use href="#i-copy"/></svg><svg class="ico c-ok"><use href="#i-check"/></svg></span></button></div>
+        <p class="promise"><span class="badge"><i></i>Replies within 24 hours</span> Dhaka, UTC+6</p>
+      </aside>
+    </div>
+  </section>
+</section>
+
+<!-- =================== 404 =================== -->
+<section class="page" data-page="lost" data-k="迷子" data-name="Lost" data-title="Lost - Nayeeb Rahman" hidden>
+  <div class="lost" id="lost">
+    <span class="lost-k" lang="ja" aria-hidden="true">迷子</span>
+    <div class="lost-av lvs" data-live="motes"><img src="img/u-lost.webp" data-lv alt="" loading="lazy" style="object-position:66% 30%"></div>
+    <canvas class="mist mist-b" aria-hidden="true"></canvas><canvas class="mist mist-f" aria-hidden="true"></canvas>
+    <div class="wrap"><span class="kanji-tag" lang="ja" style="font-size:3rem">迷子</span><h1 class="d-l lost-h">Lost in the mist.</h1><p class="lede">This page doesn't exist. Pick up the story from one of these.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:12px"><a class="btn btn-primary beacon" href="#home">Back to the start</a><a class="btn btn-ghost beacon" href="#work">See the work</a></div></div>
+  </div>
+</section>
+
+</main>
+
+<footer id="foot">
+  <div class="foot-fx" aria-hidden="true"><span class="foot-k" lang="ja">物語は続く</span><svg class="foot-horizon" viewBox="0 0 1600 260" preserveAspectRatio="none"><path d="M0 260V178h40v-26h28v26h34v-60h22v60h30v-38h46v38h26v-88h18v-14h16v14h18v88h40v-48h52v48h30v-70h26v70h36v-34h44v34h24v-104h30v104h40v-56h36v56h28v-42h50v42h34v-78h22v78h38v-30h46v30h30v-64h24v64h44v-46h40v46h26v-96h20v96h36v-40h48v40h32v-58h28v58h50v-28h40v28h46V260Z" fill="#17110D"/><rect y="150" width="1600" height="110" fill="url(#fogG)"/><defs><linearGradient id="fogG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#07080C" stop-opacity="0"/><stop offset="1" stop-color="#07080C"/></linearGradient></defs></svg><canvas class="foot-embers"></canvas></div>
+  <div class="foot-scene" data-live="prism"><img src="img/u-foot.webp" data-lv alt="" loading="lazy" style="object-position:50% 50%"></div>
+  <div class="wrap">
+    <div style="display:grid;gap:18px">
+      <a class="brand" href="#home"><svg viewBox="0 0 48 48" aria-hidden="true" style="width:40px;height:40px"><circle cx="24" cy="24" r="21" fill="none" stroke="#FA7402" stroke-width="1.5" stroke-dasharray="2.5 3.2"/><path d="M15 33V15l18 18V15" fill="none" stroke="#F2EEE8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="37.5" cy="10.5" r="2.6" fill="#FA7402"/></svg><b>Nayeeb Rahman</b></a>
+      <p class="body-copy" style="max-width:36ch">Product, business analysis and growth. Based in Dhaka, working with teams anywhere.</p>
+    </div>
+    <div><h4>Pages</h4><ul class="foot-nav"><li><a href="#work">Work</a></li><li><a href="#work">Case studies</a></li><li><a href="#hire">Hire me</a></li><li><a href="#consulting">Consulting</a></li><li><a href="#partner">Partner</a></li><li><a href="#about">About</a></li><li><a href="#contact">Let's talk</a></li></ul></div>
+    <div><h4>Contact</h4><ul class="foot-contact">
+      <li><a href="mailto:nayeebrahman@gmail.com"><svg class="ico"><use href="#i-envelope-simple"/></svg>nayeebrahman@gmail.com</a></li>
+      <li><a href="tel:+8801624373686"><svg class="ico"><use href="#i-phone"/></svg>+880 1624 373686</a></li>
+      <li><a href="tel:+8801787680648"><svg class="ico"><use href="#i-phone"/></svg>+880 1787 680648</a></li>
+      <li><a href="https://wa.me/8801624373686" target="_blank" rel="noopener"><svg class="ico"><use href="#i-whatsapp-logo"/></svg>WhatsApp @Nayeeb.Rahman</a></li>
+    </ul></div>
+    <div><h4>Elsewhere</h4><ul class="foot-social">
+      <li><a href="https://www.linkedin.com/in/md-nayeeb-rahman-b3a90a136/" target="_blank" rel="noopener"><svg class="ico"><use href="#i-linkedin-logo"/></svg>LinkedIn</a></li>
+      <li><a href="https://github.com/nayeebrahman-ui" target="_blank" rel="noopener"><svg class="ico"><use href="#i-github-logo"/></svg>GitHub</a></li>
+      <li><a href="https://www.instagram.com/nights_and_days_of_neptune/" target="_blank" rel="noopener"><svg class="ico"><use href="#i-instagram-logo"/></svg>Instagram</a></li>
+      <li><a href="https://www.facebook.com/audry.rahman.5/" target="_blank" rel="noopener"><svg class="ico"><use href="#i-facebook-logo"/></svg>Facebook</a></li>
+    </ul></div>
+    <p class="foot-sign" lang="en"><span>Every story needs its next arc.</span></p>
+    <div class="foot-base"><span>© 2026 Nayeeb Rahman</span><span class="jp" lang="ja">物語は続く</span><span>Built in Dhaka</span></div>
+  </div>
+</footer>
